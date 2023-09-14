@@ -1,0 +1,43 @@
+# Introduction
+Listing terminal history of commands
+
+Last login: Tue Sep 12 11:23:51 on ttys000
+kfv@Kobes-MacBook-Pro .ssh % "history > cmds.log"
+zsh: command not found: history > cmds.log
+kfv@Kobes-MacBook-Pro .ssh % history
+  119  ls
+  120  ssh
+  121  j#
+  122  echo "Hello, $USER"
+  123  mkdir sampledata
+  124  cd sampledata/
+  125  cd sampledata/
+  126  echo $HOME
+  127  cd /etc/
+  128  cd ~/.ssh && ssh-keygen
+  129  y
+  130  wget www.github.com
+  131  172.20.25.9
+  132  wget www.github.com
+  133  git@github.com:kfvoltaire/cs131.git
+  134  "history > cmds.log"
+kfv@Kobes-MacBook-Pro .ssh % cmds.log
+zsh: command not found: cmds.log
+kfv@Kobes-MacBook-Pro .ssh % history
+  121  j#
+  122  echo "Hello, $USER"
+  123  mkdir sampledata
+  124  cd sampledata/
+  125  cd sampledata/
+  126  echo $HOME
+  127  cd /etc/
+  128  cd ~/.ssh && ssh-keygen
+  129  y
+  130  wget www.github.com
+  131  172.20.25.9
+  132  wget www.github.com
+  133  git@github.com:kfvoltaire/cs131.git
+  134  "history > cmds.log"
+  135  history
+  136  cmds.log
+kfv@Kobes-MacBook-Pro .ssh % 
