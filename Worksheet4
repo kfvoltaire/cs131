@@ -1,0 +1,98 @@
+Last login: Thu Oct  5 00:26:08 on ttys000
+kfv@Kobes-MacBook-Pro ~ % ssh kobef23@172.20.25.9
+kobef23@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Thu Oct  5 03:26:26 2023 from 172.29.96.90
+[kobef23@sjsu ~]$ mkdir -p Worksheet4/Subscribers
+[kobef23@sjsu ~]$ grep 'United States' youtubers.csv | awk -F ',' '{print $3} > Worksheet4/Subscribers/United_States.txt
+> grep 'India' youtubers.csv | awk -F ',' '{print$3}' > Worksheet4/Subscribers/India.txt
+> awk '{ total += $1; count++ } END { print total / count }' Worksheet4/Subscribers/United_States.txt > Worksheet4/ws4_means.txt
+> awk '{total += $1; count++ } END { print total / count }' Worksheet4/Subscribers/India.txt >> Worksheet4/ws4_means.txt
+> 
+> 
+> nbkn
+> 
+> grep 'United States' youtubers.csv | awk -F ',' '{print $3} > Worksheet4/Subscribers/United_States.txt
+grep 'India' youtubers.csv | awk -F ',' '{print$3}' > Worksheet4/Subscribers/India.txt
+awk '{ total += $1; count++ } END { print total / count }' Worksheet4/Subscribers/United_States.txt > Worksheet4/ws4_means.txt
+awk '{total += $1; count++ } END { print total / count }' Worksheet4/Subscribers/India.txt >> Worksheet4/ws4_means.txt
+
+
+nbkn
+awk: cmd. line:1: {print $3} > Worksheet4/Subscribers/United_States.txt
+awk: cmd. line:1:            ^ syntax error
+awk: cmd. line:1: {print $3} > Worksheet4/Subscribers/United_States.txt
+awk: cmd. line:1:                                                  ^ syntax error
+awk: cmd. line:2: grep India youtubers.csv | awk -F , {print} > Worksheet4/Subscribers/India.txt
+awk: cmd. line:2:                     ^ syntax error
+awk: cmd. line:2: grep India youtubers.csv | awk -F , {print} > Worksheet4/Subscribers/India.txt
+awk: cmd. line:2:                                     ^ syntax error
+awk: cmd. line:2: grep India youtubers.csv | awk -F , {print} > Worksheet4/Subscribers/India.txt
+awk: cmd. line:2:                                             ^ syntax error
+awk: cmd. line:2: grep India youtubers.csv | awk -F , {print} > Worksheet4/Subscribers/India.txt
+awk: cmd. line:2:                                                                           ^ syntax error
+awk: cmd. line:3: awk {
+awk: cmd. line:3:      ^ unexpected newline or end of string
+-bash: count++: command not found
+-bash: Worksheet4/Subscribers/United_States.txt: Is a directory
+awk: warning: command line argument `Worksheet4/Subscribers/United_States.txt' is a directory: skipped
+awk: cmd. line:1: fatal: division by zero attempted
+-bash: nbkn: command not found
+[kobef23@sjsu ~]$ grep 'United States' youtubers.csv | cut -d ',' -f 4 > Worksheet4/Subscribers/United_States.txt
+-bash: Worksheet4/Subscribers/United_States.txt: Is a directory
+[kobef23@sjsu ~]$ grep 'United States' youtubers.csv | cut -d ',' -f 4 > Worksheet4/Subscribers/India.txt
+[kobef23@sjsu ~]$ cat Worksheet4/Subscribers/United_States.txt | tr '\n' '+' | sed 's/+$//' | bc -l > Worksheet4/Subscribers/United_States_mean.txt
+cat: Worksheet4/Subscribers/United_States.txt: Is a directory
+[kobef23@sjsu ~]$ cat Worksheet4/Subscribers/India.txt | tr '\n' '+' | sed 's/+$//' | bc -l > Worksheet4/Subscribers/India_mean.txt
+[kobef23@sjsu ~]$  echo "United States: $(cat Worksheet4/Subscribers/United_States_mean.txt)" >> Worksheet4/ws4_means.txt
+[kobef23@sjsu ~]$  echo "India: $(cat Worksheet4/Subscribers/India_mean.txt)" >> Worksheet4/ws4_means.txt
+[kobef23@sjsu ~]$ cat Worksheet4/ws4_means.txt
+0
+United States: 
+India: 
+[kobef23@sjsu ~]$nano ~/.bashrc
+[kobef23@sjsu ~]$ l
+-bash: l: command not found
+[kobef23@sjsu ~]$ source ~/.bashrc
+[kobef23@sjsu ~]$ l
+total 644
+-rw-rw-r-- 1 kobef23 kobef23 238778 Sep 20 20:48  index.html
+drwxrwxr-x 5 kobef23 kobef23   4096 Sep 22 23:49  assignment1
+-rw-rw-r-- 1 kobef23 kobef23 200279 Sep 23 00:23 'Global YouTube Statistics.csv'
+-rw-rw-r-- 1 kobef23 kobef23 200279 Sep 23 00:27 'Global YouTube Statistics.csv.1'
+drwxrwxr-x 3 kobef23 kobef23   4096 Oct  5 02:56  Worksheet4
+drwxrwxr-x 3 kobef23 kobef23   4096 Oct  5 03:02  Worksheet
+-rw-rw-r-- 1 kobef23 kobef23     42 Oct  5 03:24  youtubers.csv
+[kobef23@sjsu ~]$ w
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+[kobef23@sjsu ~]$ source ~/.bashrc
+[kobef23@sjsu ~]$ l
+total 644
+-rw-rw-r-- 1 kobef23 kobef23 238778 Sep 20 20:48  index.html
+drwxrwxr-x 5 kobef23 kobef23   4096 Sep 22 23:49  assignment1
+-rw-rw-r-- 1 kobef23 kobef23 200279 Sep 23 00:23 'Global YouTube Statistics.csv'
+-rw-rw-r-- 1 kobef23 kobef23 200279 Sep 23 00:27 'Global YouTube Statistics.csv.1'
+drwxrwxr-x 3 kobef23 kobef23   4096 Oct  5 02:56  Worksheet4
+drwxrwxr-x 3 kobef23 kobef23   4096 Oct  5 03:02  Worksheet
+-rw-rw-r-- 1 kobef23 kobef23     42 Oct  5 03:24  youtubers.csv
+[kobef23@sjsu ~]$ source ~/.bashrc
+[kobef23@sjsu ~]$ w
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+[kobef23@sjsu ~]$ nano ~/.bashrc
+[kobef23@sjsu ~]$ source ~/.bashrc
+[kobef23@sjsu ~]$ l
+total 644
+-rw-rw-r-- 1 kobef23 kobef23 238778 Sep 20 20:48  index.html
+drwxrwxr-x 5 kobef23 kobef23   4096 Sep 22 23:49  assignment1
+-rw-rw-r-- 1 kobef23 kobef23 200279 Sep 23 00:23 'Global YouTube Statistics.csv'
+-rw-rw-r-- 1 kobef23 kobef23 200279 Sep 23 00:27 'Global YouTube Statistics.csv.1'
+drwxrwxr-x 3 kobef23 kobef23   4096 Oct  5 02:56  Worksheet4
+drwxrwxr-x 3 kobef23 kobef23   4096 Oct  5 03:02  Worksheet
+-rw-rw-r-- 1 kobef23 kobef23     42 Oct  5 03:24  youtubers.csv
+[kobef23@sjsu ~]$ w
+8
