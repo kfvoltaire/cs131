@@ -1,0 +1,41 @@
+kfv@Kobes-MacBook-Pro .ssh % ssh kobef23@172.20.25.9
+kobef23@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Thu Oct 12 13:24:19 2023 from 172.29.96.80
+[kobef23@sjsu ~]$ cd Worksheet2
+[kobef23@sjsu Worksheet2]$ wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+--2023-10-12 13:51:46--  https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200279 (196K) [text/plain]
+Saving to: ‘Global YouTube Statistics.csv’
+
+Global YouTube Statistics.cs 100%[==============================================>] 195.58K  --.-KB/s    in 0.009s  
+
+2023-10-12 13:51:46 (22.4 MB/s) - ‘Global YouTube Statistics.csv’ saved [200279/200279]
+
+[kobef23@sjsu Worksheet2]$ grep "United States"  'Global YouTube Statistics.csv' > Worksheet2.txt
+[kobef23@sjsu Worksheet2]$ grep "Music" 'Global YouTube Statistics.csv' > Worksheet2.txt
+[kobef23@sjsu Worksheet2]$ grep "Music" 'Global YouTube Statistics.csv' | wc -l > counts.txt
+[kobef23@sjsu Worksheet2]$ grep "Music" 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+[kobef23@sjsu Worksheet2]$ nano counts.txt
+[kobef23@sjsu Worksheet2]$ nano counts.txt
+[kobef23@sjsu Worksheet2]$ history > cmds.log
+[kobef23@sjsu Worksheet2]$ cd -
+/mnt/scratch/FA23_CS131_Ashish/kobef23
+[kobef23@sjsu ~]$ ls
+ assignment1                     'Global YouTube Statistics.csv.1'   index.html     wc           youtubers.csv
+ counts.tx                       'Global YouTube Statistics.csv.2'   index.html.1   Worksheet
+ count.txt                       'Global YouTube Statistics.csv.3'   index.html.2   Worksheet1
+ cs131                           'Global YouTube Statistics.csv.4'   index.html.3   Worksheet2
+'Global YouTube Statistics.csv'  'Global YouTube Statistics.csv.5'   index.html.4   Worksheet4
+[kobef23@sjsu ~]$ nano Worksheet2.txt
+[kobef23@sjsu ~]$ nano counts.txt
+[kobef23@sjsu ~]$ cd Worksheet2
+[kobef23@sjsu Worksheet2]$ nano counts.txt
+[kobef23@sjsu Worksheet2]$ nano Worksheet2.txt
+[kobef23@sjsu Worksheet2]$ nano cmds.log
