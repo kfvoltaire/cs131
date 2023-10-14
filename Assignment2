@@ -1,0 +1,1691 @@
+[kobef23@sjsu ~]$ cd Assignment2
+[kobef23@sjsu Assignment2]$ find /etc -type f > one.txt 2> two.txt
+[kobef23@sjsu Assignment2]$ nano Assignment2.txt
+[kobef23@sjsu Assignment2]$ cat one.txt
+/etc/fstab
+/etc/crypttab
+/etc/multipath.conf
+/etc/multipath/wwids
+/etc/multipath/bindings
+/etc/resolv.conf
+/etc/dnf/modules.d/container-tools.module
+/etc/dnf/modules.d/perl.module
+/etc/dnf/modules.d/perl-IO-Socket-SSL.module
+/etc/dnf/modules.d/perl-libwww-perl.module
+/etc/dnf/modules.d/python39.module
+/etc/dnf/modules.d/javapackages-runtime.module
+/etc/dnf/dnf.conf
+/etc/dnf/plugins/copr.conf
+/etc/dnf/plugins/debuginfo-install.conf
+/etc/dnf/plugins/kpatch.conf
+/etc/dnf/plugins/product-id.conf
+/etc/dnf/plugins/subscription-manager.conf
+/etc/dnf/plugins/versionlock.conf
+/etc/dnf/plugins/versionlock.list
+/etc/dnf/protected.d/dnf.conf
+/etc/dnf/protected.d/redhat-release.conf
+/etc/dnf/protected.d/setup.conf
+/etc/dnf/protected.d/systemd.conf
+/etc/dnf/protected.d/sudo.conf
+/etc/dnf/protected.d/yum.conf
+/etc/fonts/conf.d/README
+/etc/fonts/fonts.conf
+/etc/libreport/events.d/collect_dnf.conf
+/etc/libreport/events.d/mdadm_event.conf
+/etc/logrotate.d/dnf
+/etc/logrotate.d/btmp
+/etc/logrotate.d/wtmp
+/etc/logrotate.d/samba
+/etc/logrotate.d/syslog
+/etc/logrotate.d/iscsiuiolog
+/etc/logrotate.d/bootlog
+/etc/logrotate.d/sssd
+/etc/logrotate.d/kvm_stat
+/etc/logrotate.d/subscription-manager
+/etc/logrotate.d/firewalld
+/etc/logrotate.d/chrony
+/etc/logrotate.d/opal-prd
+/etc/logrotate.d/psacct
+/etc/bash_completion.d/tracer
+/etc/bash_completion.d/authselect-completion.sh
+/etc/bash_completion.d/vdo
+/etc/bash_completion.d/vdostats
+/etc/bash_completion.d/redefine_filedir
+/etc/bash_completion.d/bpftool
+/etc/bash_completion.d/iprconfig
+/etc/rhsm/ca/redhat-entitlement-authority.pem
+/etc/rhsm/ca/redhat-uep.pem
+/etc/rhsm/ca/katello-server-ca.pem
+/etc/rhsm/ca/katello-default-ca.pem
+/etc/rhsm/syspurpose/valid_fields.json
+/etc/rhsm/syspurpose/syspurpose.json
+/etc/rhsm/logging.conf
+/etc/rhsm/rhsm.conf
+/etc/rhsm/rhsm.conf.kat-backup
+/etc/pki/swid/CA/redhat.com/redhatcodesignca.cert
+/etc/pki/product-default/279.pem
+/etc/pki/rpm-gpg/ISV-Container-signing-key
+/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta
+/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+/etc/pki/ca-trust/extracted/edk2/README
+/etc/pki/ca-trust/extracted/edk2/cacerts.bin
+/etc/pki/ca-trust/extracted/README
+/etc/pki/ca-trust/extracted/java/README
+/etc/pki/ca-trust/extracted/java/cacerts
+/etc/pki/ca-trust/extracted/openssl/README
+/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt
+/etc/pki/ca-trust/extracted/pem/README
+/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+/etc/pki/ca-trust/extracted/pem/email-ca-bundle.pem
+/etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem
+/etc/pki/ca-trust/README
+/etc/pki/ca-trust/ca-legacy.conf
+/etc/pki/ca-trust/source/README
+/etc/pki/ca-trust/source/anchors/katello-server-ca.pem
+/etc/pki/tls/ct_log_list.cnf
+/etc/pki/tls/openssl.cnf
+/etc/pki/nssdb/cert8.db
+/etc/pki/nssdb/cert9.db
+/etc/pki/nssdb/key3.db
+/etc/pki/nssdb/key4.db
+/etc/pki/nssdb/pkcs11.txt
+/etc/pki/nssdb/secmod.db
+/etc/pki/consumer.old/key.pem
+/etc/pki/consumer.old/cert.pem
+/etc/rpm/macros.dist
+/etc/netconfig
+/etc/issue
+/etc/nsswitch.conf.bak
+/etc/issue.net
+/etc/lvm/lvm.conf
+/etc/lvm/lvmlocal.conf
+/etc/lvm/profile/cache-mq.profile
+/etc/lvm/profile/cache-smq.profile
+/etc/lvm/profile/command_profile_template.profile
+/etc/lvm/profile/lvmdbusd.profile
+/etc/lvm/profile/metadata_profile_template.profile
+/etc/lvm/profile/thin-generic.profile
+/etc/lvm/profile/thin-performance.profile
+/etc/lvm/profile/vdo-small.profile
+/etc/groff/site-tmac/man.local
+/etc/groff/site-tmac/mdoc.local
+/etc/lsm/lsmd.conf
+/etc/lsm/pluginconf.d/sim.conf
+/etc/redhat-release
+/etc/magic
+/etc/GREP_COLORS
+/etc/sos/sos.conf
+/etc/system-release-cpe
+/etc/yum.repos.d/redhat.repo
+/etc/login.defs
+/etc/aliases
+/etc/depmod.d/dist.conf
+/etc/depmod.d/kvdo.conf
+/etc/bashrc
+/etc/modprobe.d/firewalld-sysctls.conf
+/etc/modprobe.d/tuned.conf
+/etc/csh.cshrc
+/etc/.pwd.lock
+/etc/csh.login
+/etc/security/pwquality.conf
+/etc/security/access.conf
+/etc/security/chroot.conf
+/etc/security/console.apps/config-util
+/etc/security/console.apps/subscription-manager
+/etc/security/console.handlers
+/etc/security/console.perms
+/etc/security/faillock.conf
+/etc/security/group.conf
+/etc/security/limits.conf
+/etc/security/namespace.conf
+/etc/security/namespace.init
+/etc/security/opasswd
+/etc/security/pam_env.conf
+/etc/security/sepermit.conf
+/etc/security/time.conf
+/etc/environment
+/etc/pam.d/vlock
+/etc/pam.d/config-util
+/etc/pam.d/other
+/etc/pam.d/login
+/etc/pam.d/remote
+/etc/pam.d/runuser
+/etc/pam.d/runuser-l
+/etc/pam.d/su
+/etc/pam.d/su-l
+/etc/pam.d/systemd-user
+/etc/pam.d/polkit-1
+/etc/pam.d/crond
+/etc/pam.d/passwd
+/etc/pam.d/sudo
+/etc/pam.d/sudo-i
+/etc/pam.d/cockpit
+/etc/pam.d/sssd-shadowutils
+/etc/pam.d/subscription-manager
+/etc/pam.d/sshd
+/etc/pam.d/chfn
+/etc/pam.d/chsh
+/etc/pam.d/atd
+/etc/ethertypes
+/etc/adjtime
+/etc/exports
+/etc/group-
+/etc/filesystems
+/etc/gshadow-
+/etc/group
+/etc/dracut.conf
+/etc/gshadow
+/etc/host.conf
+/etc/passwd-
+/etc/hosts
+/etc/shadow-
+/etc/inputrc
+/etc/motd
+/etc/inittab
+/etc/networks
+/etc/sysctl.conf
+/etc/passwd
+/etc/systemd/coredump.conf
+/etc/systemd/journald.conf
+/etc/systemd/logind.conf
+/etc/systemd/resolved.conf
+/etc/systemd/system.conf
+/etc/systemd/user.conf
+/etc/systemd/system.control/srcmstr.service.d/50-TasksMax.conf
+/etc/printcap
+/etc/profile
+/etc/profile.d/csh.local
+/etc/profile.d/lang.csh
+/etc/profile.d/lang.sh
+/etc/profile.d/sh.local
+/etc/profile.d/colorgrep.csh
+/etc/profile.d/colorgrep.sh
+/etc/profile.d/colorxzgrep.csh
+/etc/profile.d/colorxzgrep.sh
+/etc/profile.d/colorls.csh
+/etc/profile.d/colorls.sh
+/etc/profile.d/less.csh
+/etc/profile.d/less.sh
+/etc/profile.d/gawk.csh
+/etc/profile.d/gawk.sh
+/etc/profile.d/colorzgrep.csh
+/etc/profile.d/colorzgrep.sh
+/etc/profile.d/which2.csh
+/etc/profile.d/which2.sh
+/etc/profile.d/vim.csh
+/etc/profile.d/vim.sh
+/etc/profile.d/bash_completion.sh
+/etc/binfmt.d/kshcomp.conf
+/etc/protocols
+/etc/services
+/etc/machine-id
+/etc/shadow
+/etc/shells
+/etc/subgid
+/etc/tcsd.conf
+/etc/subuid
+/etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+/etc/X11/xinit/xinitrc.d/10-qt5-check-opengl2.sh
+/etc/skel/.bash_logout
+/etc/skel/.bash_profile
+/etc/skel/.bashrc
+/etc/skel/.kshrc
+/etc/sysconfig/ip6tables-config
+/etc/sysconfig/iptables-config
+/etc/sysconfig/nftables.conf
+/etc/sysconfig/ebtables-config
+/etc/sysconfig/samba
+/etc/sysconfig/rsyslog
+/etc/sysconfig/run-parts
+/etc/sysconfig/crond
+/etc/sysconfig/network-scripts/ifcfg-env3
+/etc/sysconfig/network-scripts/ifcfg-env2
+/etc/sysconfig/raid-check
+/etc/sysconfig/kdump
+/etc/sysconfig/cpupower
+/etc/sysconfig/firewalld
+/etc/sysconfig/chronyd
+/etc/sysconfig/sshd
+/etc/sysconfig/atd
+/etc/sysconfig/smartmontools
+/etc/sysconfig/irqbalance
+/etc/sysconfig/man-db
+/etc/sysconfig/kernel
+/etc/sysconfig/anaconda
+/etc/sysconfig/sshd-permitrootlogin
+/etc/sysconfig/network
+/etc/xdg/qtchooser/5-64.conf
+/etc/sestatus.conf
+/etc/ld.so.conf
+/etc/ld.so.conf.d/kernel-4.18.0-372.9.1.el8.ppc64le.conf
+/etc/ld.so.conf.d/kernel-4.18.0-372.32.1.el8_6.ppc64le.conf
+/etc/ld.so.conf.d/dyninst-ppc64le.conf
+/etc/udev/rules.d/90-vpdupdate.rules
+/etc/udev/rules.d/69-vdo-start-by-dev.rules
+/etc/udev/rules.d/70-persistent-net.rules
+/etc/udev/udev.conf
+/etc/udev/hwdb.bin
+/etc/default/useradd
+/etc/default/grub
+/etc/cron.deny
+/etc/rpc
+/etc/anacrontab
+/etc/ld.so.cache
+/etc/rwtab.d/logrotate
+/etc/rwtab.d/sssd
+/etc/rc.d/init.d/README
+/etc/rc.d/init.d/functions
+/etc/rc.d/rc.local
+/etc/libuser.conf
+/etc/cron.daily/logrotate
+/etc/cron.daily/run_diag_encl
+/etc/logrotate.conf
+/etc/rsyslog.conf
+/etc/samba/lmhosts
+/etc/samba/smb.conf
+/etc/samba/smb.conf.example
+/etc/rsyslog.d/opal-prd.conf
+/etc/rsyslog.d/21-cloudinit.conf
+/etc/cron.hourly/0anacron
+/etc/xattr.conf
+/etc/lsvpd/cpu_mod_conv.conf
+/etc/lsvpd/nvme_templates.conf
+/etc/lsvpd/scsi_templates.conf
+/etc/libaudit.conf
+/etc/libnl/classid
+/etc/libnl/pktloc
+/etc/selinux/semanage.conf
+/etc/selinux/targeted/.policy.sha512
+/etc/selinux/targeted/booleans.subs_dist
+/etc/selinux/targeted/contexts/customizable_types
+/etc/selinux/targeted/contexts/dbus_contexts
+/etc/selinux/targeted/contexts/default_contexts
+/etc/selinux/targeted/contexts/default_type
+/etc/selinux/targeted/contexts/failsafe_context
+/etc/selinux/targeted/contexts/files/file_contexts
+/etc/selinux/targeted/contexts/files/file_contexts.homedirs
+/etc/selinux/targeted/contexts/files/file_contexts.local
+/etc/selinux/targeted/contexts/files/file_contexts.subs
+/etc/selinux/targeted/contexts/files/file_contexts.subs_dist
+/etc/selinux/targeted/contexts/files/media
+/etc/selinux/targeted/contexts/files/file_contexts.bin
+/etc/selinux/targeted/contexts/files/file_contexts.homedirs.bin
+/etc/selinux/targeted/contexts/initrc_context
+/etc/selinux/targeted/contexts/lxc_contexts
+/etc/selinux/targeted/contexts/openssh_contexts
+/etc/selinux/targeted/contexts/removable_context
+/etc/selinux/targeted/contexts/securetty_types
+/etc/selinux/targeted/contexts/sepgsql_contexts
+/etc/selinux/targeted/contexts/snapperd_contexts
+/etc/selinux/targeted/contexts/systemd_contexts
+/etc/selinux/targeted/contexts/userhelper_context
+/etc/selinux/targeted/contexts/users/guest_u
+/etc/selinux/targeted/contexts/users/root
+/etc/selinux/targeted/contexts/users/staff_u
+/etc/selinux/targeted/contexts/users/sysadm_u
+/etc/selinux/targeted/contexts/users/unconfined_u
+/etc/selinux/targeted/contexts/users/user_u
+/etc/selinux/targeted/contexts/users/xguest_u
+/etc/selinux/targeted/contexts/virtual_domain_context
+/etc/selinux/targeted/contexts/virtual_image_context
+/etc/selinux/targeted/contexts/x_contexts
+/etc/selinux/targeted/policy/policy.31
+/etc/selinux/targeted/setrans.conf
+/etc/selinux/targeted/seusers
+/etc/selinux/config
+/etc/gcrypt/random.conf
+/etc/kernel/install.d/20-grubby.install
+/etc/kernel/install.d/90-loaderentry.install
+/etc/libibverbs.d/bnxt_re.driver
+/etc/libibverbs.d/cxgb4.driver
+/etc/libibverbs.d/efa.driver
+/etc/libibverbs.d/hfi1verbs.driver
+/etc/libibverbs.d/hns.driver
+/etc/libibverbs.d/irdma.driver
+/etc/libibverbs.d/mlx4.driver
+/etc/libibverbs.d/mlx5.driver
+/etc/libibverbs.d/qedr.driver
+/etc/libibverbs.d/rxe.driver
+/etc/libibverbs.d/siw.driver
+/etc/libibverbs.d/vmw_pvrdma.driver
+/etc/virc
+/etc/bindresvport.blacklist
+/etc/request-key.conf
+/etc/DIR_COLORS
+/etc/dbus-1/session.conf
+/etc/dbus-1/system.conf
+/etc/dbus-1/system.d/org.freedesktop.PolicyKit1.conf
+/etc/dbus-1/system.d/org.selinux.conf
+/etc/dbus-1/system.d/oddjob.conf
+/etc/dbus-1/system.d/oddjob-mkhomedir.conf
+/etc/dbus-1/system.d/org.freedesktop.PackageKit.conf
+/etc/dbus-1/system.d/org.fedoraproject.SetroubleshootFixit.conf
+/etc/dbus-1/system.d/org.fedoraproject.SetroubleshootPrivileged.conf
+/etc/dbus-1/system.d/org.fedoraproject.Setroubleshootd.conf
+/etc/dbus-1/system.d/teamd.conf
+/etc/dbus-1/system.d/com.redhat.RHSM1.Facts.conf
+/etc/dbus-1/system.d/com.redhat.RHSM1.conf
+/etc/dbus-1/system.d/org.freedesktop.realmd.conf
+/etc/dbus-1/system.d/com.redhat.tuned.conf
+/etc/rhc/workers/rhc-package-manager.toml
+/etc/rhc/config.toml
+/etc/DIR_COLORS.256color
+/etc/krb5.conf.d/enable_sssd_conf_dir
+/etc/krb5.conf.d/kcm_default_ccache
+/etc/ssh/moduli
+/etc/ssh/ssh_config
+/etc/ssh/ssh_config.d/05-redhat.conf
+/etc/ssh/sshd_config
+/etc/ssh/ssh_host_rsa_key
+/etc/ssh/ssh_host_rsa_key.pub
+/etc/ssh/ssh_host_dsa_key
+/etc/ssh/ssh_host_dsa_key.pub
+/etc/ssh/ssh_host_ecdsa_key
+/etc/ssh/ssh_host_ecdsa_key.pub
+/etc/ssh/ssh_host_ed25519_key
+/etc/ssh/ssh_host_ed25519_key.pub
+/etc/DIR_COLORS.lightbgcolor
+/etc/NetworkManager/NetworkManager.conf
+/etc/NetworkManager/conf.d/99-cloud-init.conf
+/etc/NetworkManager/dispatcher.d/20-chrony-dhcp
+/etc/NetworkManager/dispatcher.d/20-chrony-onoffline
+/etc/NetworkManager/dispatcher.d/hook-network-manager
+/etc/vimrc
+/etc/libssh/libssh_client.config
+/etc/libssh/libssh_server.config
+/etc/openldap/ldap.conf
+/etc/crypto-policies/back-ends/nss.config
+/etc/crypto-policies/local.d/nss-p11-kit.config
+/etc/crypto-policies/state/current
+/etc/crypto-policies/state/CURRENT.pol
+/etc/crypto-policies/config
+/etc/crontab
+/etc/krb5.conf
+/etc/cron.d/0hourly
+/etc/cron.d/raid-check
+/etc/iproute2/bpf_pinning
+/etc/iproute2/ematch_map
+/etc/iproute2/group
+/etc/iproute2/nl_protos
+/etc/iproute2/rt_dsfield
+/etc/iproute2/rt_protos
+/etc/iproute2/rt_realms
+/etc/iproute2/rt_scopes
+/etc/iproute2/rt_tables
+/etc/unbound/icannbundle.pem
+/etc/unbound/root.key
+/etc/ppc64-diag/ppc64-diag.config
+/etc/rc.powerfail
+/etc/libblockdev/conf.d/00-default.cfg
+/etc/usb_modeswitch.conf
+/etc/authselect/user-nsswitch.conf
+/etc/authselect/system-auth
+/etc/authselect/password-auth
+/etc/authselect/fingerprint-auth
+/etc/authselect/smartcard-auth
+/etc/authselect/postlogin
+/etc/authselect/nsswitch.conf
+/etc/authselect/dconf-db
+/etc/authselect/dconf-locks
+/etc/authselect/authselect.conf
+/etc/oddjobd.conf
+/etc/oddjobd.conf.d/oddjobd-introspection.conf
+/etc/oddjobd.conf.d/oddjobd-mkhomedir.conf
+/etc/PackageKit/PackageKit.conf
+/etc/PackageKit/Vendor.conf
+/etc/kdump.conf
+/etc/makedumpfile.conf.sample
+/etc/sudo-ldap.conf
+/etc/sudo.conf
+/etc/sudoers
+/etc/iscsi/iscsid.conf
+/etc/iscsi/initiatorname.iscsi
+/etc/mke2fs.conf
+/etc/setroubleshoot/setroubleshoot.conf
+/etc/plymouth/plymouthd.conf
+/etc/fprintd.conf
+/etc/udisks2/mount_options.conf.example
+/etc/udisks2/udisks2.conf
+/etc/idmapd.conf
+/etc/trusted-key.key
+/etc/insights-client/.exp.sed
+/etc/insights-client/.fallback.json
+/etc/insights-client/.fallback.json.asc
+/etc/insights-client/cert-api.access.redhat.com.pem
+/etc/insights-client/insights-client.conf
+/etc/insights-client/insights-client.motd
+/etc/insights-client/redhattools.pub.gpg
+/etc/insights-client/rpm.egg
+/etc/insights-client/rpm.egg.asc
+/etc/fuse.conf
+/etc/containers/policy.json
+/etc/containers/registries.conf
+/etc/containers/registries.conf.d/000-shortnames.conf
+/etc/containers/registries.conf.d/001-rhel-shortnames.conf
+/etc/containers/registries.conf.d/002-rhel-shortnames-overrides.conf
+/etc/containers/registries.d/default.yaml
+/etc/containers/registries.d/registry.access.redhat.com.yaml
+/etc/containers/registries.d/registry.redhat.io.yaml
+/etc/containers/storage.conf
+/etc/pinforc
+/etc/tuned/active_profile
+/etc/tuned/bootcmdline
+/etc/tuned/post_loaded_profile
+/etc/tuned/profile_mode
+/etc/tuned/tuned-main.conf
+/etc/wgetrc
+/etc/dhcp/dhclient.d/chrony.sh
+/etc/dhcp/dhclient-exit-hooks.d/hook-dhclient
+/etc/chrony.conf
+/etc/chrony.keys
+/etc/at.deny
+/etc/updatedb.conf
+/etc/smartmontools/smartd.conf
+/etc/smartmontools/smartd_warning.sh
+/etc/nvme/hostnqn
+/etc/nvme/hostid
+/etc/man_db.conf
+/etc/nanorc
+/etc/mailcap
+/etc/mime.types
+/etc/locale.conf
+/etc/vconsole.conf
+/etc/hostname
+/etc/.updated
+/etc/cloud/cloud.cfg.d/05_logging.cfg
+/etc/cloud/cloud.cfg.d/README
+/etc/cloud/templates/chef_client.rb.tmpl
+/etc/cloud/templates/chrony.conf.debian.tmpl
+/etc/cloud/templates/chrony.conf.fedora.tmpl
+/etc/cloud/templates/chrony.conf.opensuse.tmpl
+/etc/cloud/templates/chrony.conf.rhel.tmpl
+/etc/cloud/templates/chrony.conf.sles.tmpl
+/etc/cloud/templates/chrony.conf.ubuntu.tmpl
+/etc/cloud/templates/hosts.debian.tmpl
+/etc/cloud/templates/hosts.freebsd.tmpl
+/etc/cloud/templates/hosts.redhat.tmpl
+/etc/cloud/templates/hosts.suse.tmpl
+/etc/cloud/templates/ntp.conf.debian.tmpl
+/etc/cloud/templates/ntp.conf.fedora.tmpl
+/etc/cloud/templates/ntp.conf.opensuse.tmpl
+/etc/cloud/templates/ntp.conf.rhel.tmpl
+/etc/cloud/templates/ntp.conf.sles.tmpl
+/etc/cloud/templates/ntp.conf.ubuntu.tmpl
+/etc/cloud/templates/resolv.conf.tmpl
+/etc/cloud/templates/sources.list.debian.tmpl
+/etc/cloud/templates/sources.list.ubuntu.tmpl
+/etc/cloud/templates/timesyncd.conf.tmpl
+/etc/cloud/ds-identify.cfg
+/etc/cloud/cloud.cfg
+/etc/subuid-
+/etc/subgid-
+/etc/kshrc
+/etc/objrepos/SRCextmeth
+/etc/objrepos/SRCnotify
+/etc/objrepos/SRCsubsvr
+/etc/objrepos/SRCsubsys
+/etc/objrepos/SRCodmlock
+/etc/bindresvport.blacklist.rsct.save
+/etc/ct_node_id
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/calendars.properties
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/logging.properties
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/blacklisted.certs
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/java.policy
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/java.security
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/nss.cfg
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/nss.fips.cfg
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/policy/limited/US_export_policy.jar
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/policy/limited/local_policy.jar
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/policy/unlimited/US_export_policy.jar
+/etc/java/java-1.8.0-openjdk/java-1.8.0-openjdk-1.8.0.352.b08-2.el8_6.ppc64le/lib/security/policy/unlimited/local_policy.jar
+/etc/sgml/docbook/xmlcatalog
+/etc/sgml/sgml.conf
+/etc/sgml/sgml-docbook-3.0.cat
+/etc/sgml/catalog
+/etc/sgml/sgml-docbook-3.1.cat
+/etc/sgml/sgml-docbook-4.0.cat
+/etc/sgml/sgml-docbook-4.1.cat
+/etc/sgml/xml-docbook-4.1.2.cat
+/etc/sgml/sgml-docbook-4.2.cat
+/etc/sgml/xml-docbook-4.2.cat
+/etc/sgml/sgml-docbook-4.3.cat
+/etc/sgml/xml-docbook-4.3.cat
+/etc/sgml/sgml-docbook-4.4.cat
+/etc/sgml/xml-docbook-4.4.cat
+/etc/sgml/sgml-docbook-4.5.cat
+/etc/sgml/xml-docbook-4.5.cat
+/etc/xml/catalog
+/etc/papersize
+/etc/gdbinit
+/etc/asciidoc/asciidoc.conf
+/etc/asciidoc/docbook45.conf
+/etc/asciidoc/filters/code/code-filter.conf
+/etc/asciidoc/filters/code/code-filter.py
+/etc/asciidoc/filters/graphviz/graphviz-filter.conf
+/etc/asciidoc/filters/graphviz/graphviz2png.py
+/etc/asciidoc/filters/source/source-highlight-filter.conf
+/etc/asciidoc/help.conf
+/etc/asciidoc/html4.conf
+/etc/asciidoc/html5.conf
+/etc/asciidoc/lang-cs.conf
+/etc/asciidoc/lang-de.conf
+/etc/asciidoc/lang-el.conf
+/etc/asciidoc/lang-en.conf
+/etc/asciidoc/lang-es.conf
+/etc/asciidoc/lang-fi.conf
+/etc/asciidoc/lang-fr.conf
+/etc/asciidoc/lang-hu.conf
+/etc/asciidoc/lang-id.conf
+/etc/asciidoc/lang-it.conf
+/etc/asciidoc/lang-ja.conf
+/etc/asciidoc/lang-nl.conf
+/etc/asciidoc/lang-pl.conf
+/etc/asciidoc/lang-pt-BR.conf
+/etc/asciidoc/lang-ro.conf
+/etc/asciidoc/lang-ru.conf
+/etc/asciidoc/lang-sv.conf
+/etc/asciidoc/lang-uk.conf
+/etc/asciidoc/latex.conf
+/etc/asciidoc/slidy.conf
+/etc/asciidoc/text.conf
+/etc/asciidoc/themes/flask/flask.css
+/etc/asciidoc/themes/volnitsky/volnitsky.css
+/etc/asciidoc/xhtml11-quirks.conf
+/etc/asciidoc/xhtml11.conf
+[kobef23@sjsu Assignment2]$ cat two.txt
+find: ‘/etc/pki/rsyslog’: Permission denied
+find: ‘/etc/lvm/archive’: Permission denied
+find: ‘/etc/lvm/backup’: Permission denied
+find: ‘/etc/lvm/cache’: Permission denied
+find: ‘/etc/sssd’: Permission denied
+find: ‘/etc/polkit-1/rules.d’: Permission denied
+find: ‘/etc/polkit-1/localauthority’: Permission denied
+find: ‘/etc/grub.d’: Permission denied
+find: ‘/etc/nftables’: Permission denied
+find: ‘/etc/audit’: Permission denied
+find: ‘/etc/sudoers.d’: Permission denied
+find: ‘/etc/firewalld’: Permission denied
+[kobef23@sjsu Assignment2]$ nano Assignment2.txt
+[kobef23@sjsu Assignment2]$ cut -d, -f2,3 'Global YouTubeStatistics.csv' | sort | uniq -c | sort -nr
+cut: 'Global YouTubeStatistics.csv': No such file or directory
+[kobef23@sjsu Assignment2]$ wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+--2023-10-13 22:39:25--  https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200279 (196K) [text/plain]
+Saving to: ‘Global YouTube Statistics.csv’
+
+Global YouTube Statistics.c 100%[=========================================>] 195.58K  --.-KB/s    in 0.009s  
+
+2023-10-13 22:39:25 (21.0 MB/s) - ‘Global YouTube Statistics.csv’ saved [200279/200279]
+
+[kobef23@sjsu Assignment2]$ cut -d, -f2,3 'Global YouTubeStatistics.csv' | sort | uniq -c | sort -nr
+cut: 'Global YouTubeStatistics.csv': No such file or directory
+[kobef23@sjsu Assignment2]$ cut -d, -f2,3 'Global YouTube Statistics.csv' | sort | uniq -c | sort -nr
+      1 Z������?,15000000
+      1 ZutiGang,14900000
+      1 Zuni and Family,17900000
+      1 Zig & Sharko,14400000
+      1 Zhong,29200000
+      1 ZHC,25500000
+      1 Zeinab Harake,13600000
+      1 Zee TV,70500000
+      1 Zee Telugu,14000000
+      1 Zee Tamil,12500000
+      1 Zee News,30500000
+      1 Zee Music Company,96700000
+      1 Zee Music Classic,15700000
+      1 Zee Kids,12400000
+      1 Zee Bangla,14200000
+      1 ZEE5,14400000
+      1 zbing z.,17600000
+      1 zayn,15400000
+      1 ZAMZAM ELECTRONICS TRADING,21700000
+      1 Zach King,20700000
+      1 Zach Choi ASMR,21900000
+      1 Yuya,24800000
+      1 Yudist Ardhana,14100000
+      1 YRF,54600000
+      1 Youtuber,subscribers
+      1 YouTube Movies,170000000
+      1 YouTube,36300000
+      1 YoungBoy Never Broke Again,12700000
+      1 Younes Zarou,16600000
+      1 YOLO AVENTURAS,31200000
+      1 YOLO,21400000
+      1 Yoeslan,20700000
+      1 Yair17,12500000
+      1 XXXTENTACION,39200000
+      1 XpressTV,15000000
+      1 XO TEAM,16200000
+      1 WWE,96000000
+      1 Wow Kidz Action,19000000
+      1 WowKidz,32200000
+      1 Worldwide Records Bhojpuri,31700000
+      1 WORLDSTARHIPHOP,26500000
+      1 WorkpointOfficial,39000000
+      1 Woody & Kleiny,13500000
+      1 Wolfoo Family,12500000
+      1 Wolfoo Channel,13000000
+      1 Wiz Khalifa,27500000
+      1 With Kids[����?,16700000
+      1 Wish 107.5,14200000
+      1 Willyrex,17200000
+      1 Willie Salim,18500000
+      1 wifistudy,16000000
+      1 WiederDude,13100000
+      1 White Hill Music,23000000
+      1 whinderssonnunes,44200000
+      1 Wesley Safad�,13700000
+      1 Werever2morro,16600000
+      1 Wengie,13500000
+      1 WB Kids,25200000
+      1 Wave Music Bhojpuri,23100000
+      1 Wave Music Bhakti,12500000
+      1 Wave Music,58000000
+      1 WatchMojo.com,25100000
+      1 W2S,16300000
+      1 Vsauce,19300000
+      1 Voot Kids,45500000
+      1 Volga Video,15700000
+      1 Vogue,13300000
+      1 Voc���,44700000
+      1 Vlad y Niki Show,13400000
+      1 Vlad v��?,37900000
+      1 Vlad and Niki PRT,14400000
+      1 Vlad and Niki IDN,21000000
+      1 Vlad and Niki ESP,22000000
+      1 Vlad and Niki Arabic,22500000
+      1 Vlad and Niki ARA,16100000
+      1 Vlad and Niki,98900000
+      1 ViralHog,14000000
+      1 Vilmei,13200000
+      1 Village Cooking Channel,21600000
+      1 Vijay Television,20400000
+      1 Vijay Kumar Viner Vlogs,13500000
+      1 VICE,16900000
+      1 Vibhu 96,13400000
+      1 VexTrex,13300000
+      1 Vevo,20000000
+      1 Veritasium,13900000
+      1 Venus Entertainment,23800000
+      1 VEGETTA777,33800000
+      1 _vector_,12400000
+      1 VanossGaming,25800000
+      1 Vania Mania Kids,22700000
+      1 Valentina Pontes ofc,23400000
+      1 Unspeakable,15900000
+      1 unknown boy varun,23100000
+      1 Unbox Therapy,19300000
+      1 Ultra Records,29600000
+      1 Ultra Movie Parlour,22900000
+      1 Ultra Bollywood,36600000
+      1 UFC - Ultimate Fighting Championship,16400000
+      1 Typical Gamer,13500000
+      1 ??????TwinsFromRussia,13200000
+      1 TWICE,16100000
+      1 twenty one pilots,13100000
+      1 TV Ana Emilia,14000000
+      1 TV9 Bharatvarsh,14500000
+      1 tuzelity SHUFFLE,20700000
+      1 Turma da M��,19000000
+      1 Tu COSMOPOLIS,16700000
+      1 Tsuriki Show,23000000
+      1 T-Series Regional,13900000
+      1 T-Series Hamaar Bhojpuri,15200000
+      1 T-Series Bollywood Classics,35400000
+      1 T-Series Bhakti Sagar,61000000
+      1 T-Series Apna Punjab,34600000
+      1 T-Series,245000000
+      1 Troom Troom PT,12500000
+      1 Troom Troom Indonesia,12500000
+      1 Troom Troom India,12800000
+      1 Troom Troom Es,19700000
+      1 Troom Troom,23800000
+      1 Triggered Insaan,18800000
+      1 Travis Scott,16700000
+      1 Trap Nation,30400000
+      1 Trap City,14100000
+      1 TRANS TV Official,17100000
+      1 TRANS7 OFFICIAL,25000000
+      1 Trakin Tech,13300000
+      1 Toys and Colors,40300000
+      1 ToyPuddingTV,27100000
+      1 toyorbabytv,22900000
+      1 ???????? ???????? ?????????? | toyoraljanahtv,30200000
+      1 toycantando,27700000
+      1 Totoy kids - Portugu�,20400000
+      1 Totoy kids - Espa�?,16000000
+      1 Total Gaming,35400000
+      1 Top Viral Talent,12900000
+      1 Topper Guild,21900000
+      1 TommyInnit,14200000
+      1 Tlnovelas,21500000
+      1 TKOR,12400000
+      1 Tips Official,59300000
+      1 Timba Vk,12400000
+      1 Tilak,23400000
+      1 Think Music India,13800000
+      1 The World Adventures ������,13400000
+      1 TheWillyrex,18400000
+      1 The Weeknd,32600000
+      1 The Vishal bhatt,13700000
+      1 The Tonight Show Starring Jimmy Fallon,31200000
+      1 The Slow Mo Guys,14700000
+      1 The Shiny Peanut,12900000
+      1 The Royalty Family,21300000
+      1 TheRichest,15000000
+      1 theRadBrad,13300000
+      1 The Q,13400000
+      1 TheOdd1sOut,19100000
+      1 The MriDul,15200000
+      1 The Late Late Show with James Corden,28400000
+      1 The Lallantop,25200000
+      1 The LaBrant Fam,13000000
+      1 The Infographics Show,13200000
+      1 TheGrefg,18000000
+      1 The Game Theorists,17600000
+      1 TheEllenShow,38200000
+      1 TheDonato,31200000
+      1 The Dodo,14200000
+      1 The Chainsmokers,22600000
+      1 THE BROWN SIBLINGS,15000000
+      1 TheBrianMaps,17100000
+      1 The ACE Family,18500000
+      1 That Little Puff,23700000
+      1 Thairath Online,16200000
+      1 Telemundo,14500000
+      1 Tekashi 6ix9ine,21500000
+      1 TEDx Talks,38600000
+      1 TED-Ed,18800000
+      1 TED,23100000
+      1 Technology Gyan,13200000
+      1 Techno Gamerz,34400000
+      1 Technoblade,16300000
+      1 Technical Guruji,23000000
+      1 Team Films Bhojpuri,15700000
+      1 TazerCraft,14900000
+      1 TaylorSwiftVEVO,25600000
+      1 Taylor Swift,52900000
+      1 Tasty,21100000
+      1 tanboy kun,17700000
+      1 Talking Tom & Friends,15500000
+      1 Talking Tom,30200000
+      1 Talking Angela,12800000
+      1 tabii Urdu,19600000
+      1 Taarak Mehta Ka Ooltah Chashmah,17300000
+      1 T3ddy,16200000
+      1 Susy Mouriz,13000000
+      1 SUPER SLICK SLIME SAM,19000000
+      1 Super Simple Songs - Kids Songs,39200000
+      1 Super Senya,15500000
+      1 Super Polina,14300000
+      1 Super JoJo - Nursery Rhymes & Kids Songs,24100000
+      1 Supercar Blondie,14100000
+      1 Sun TV,22600000
+      1 ?????????SULGI,12600000
+      1 StudyIQ IAS,14700000
+      1 Stubborn Facts,17300000
+      1 Stray Kids,13300000
+      1 Stokes Twins,21800000
+      1 StarPlus,32000000
+      1 SSundee,22500000
+      1 SSSniperWolf,33700000
+      1 SRK MUSIC,15200000
+      1 SriBalajiMovies,16600000
+      1 SQUEEZIE,18100000
+      1 Sports,75000000
+      1 Spinnin' Records,30100000
+      1 Spider Slack,24000000
+      1 Speed Records,42500000
+      1 Sourav Joshi Vlogs,21700000
+      1 Sony SAB,83000000
+      1 Sony PAL,38200000
+      1 SonyMusicSouthVEVO,18000000
+      1 Sony Music South,15000000
+      1 SonyMusicIndiaVEVO,46600000
+      1 Sony Music India,57200000
+      1 Sony LIV,15200000
+      1 Sony AATH,19600000
+      1 Sonotek Bhakti,13200000
+      1 Sonotek,19200000
+      1 SOMOY TV,19800000
+      1 SMTOWN,31900000
+      1 Smosh,26100000
+      1 SMOL,21500000
+      1 Smile Family Spanish,18600000
+      1 Smile Family,22300000
+      1 SlivkiShow,20400000
+      1 Skrillex,20100000
+      1 SIS vs BRO,14200000
+      1 Sidhu Moose Wala,21400000
+      1 Sidemen,18800000
+      1 Sia,22600000
+      1 Shorts Break,29000000
+      1 shfa show India,24200000
+      1 shfa,38400000
+      1 shfa2 - ��,39700000
+      1 Shemaroo Movies,28200000
+      1 Shemaroo Filmi Gaane,65600000
+      1 Shemaroo Comedy,18600000
+      1 Shemaroo,47400000
+      1 Shawn Mendes,30000000
+      1 shane,19200000
+      1 shakiraVEVO,18400000
+      1 Shakira,43500000
+      1 SEVENGERS,14200000
+      1 SET India,159000000
+      1 Sesame Street,23300000
+      1 SelenaGomezVEVO,14400000
+      1 Selena Gomez,33600000
+      1 Sebasti���,18000000
+      1 SCTV,19700000
+      1 Saturday Night Live,13600000
+      1 Saregama Music,35500000
+      1 Sanjoy Das Official,13500000
+      1 Sandra Cires Art,16400000
+      1 Sandeep Maheshwari,27800000
+      1 SAM SMITH,16300000
+      1 Salman Noman,16700000
+      1 Sagawa /���,22000000
+      1 sagar kalra (Shorts),16000000
+      1 SAAIHALILINTAR,12400000
+      1 Saad Lamjarred | �����?,14500000
+      1 Ryan Trahan,13100000
+      1 Ryan's World,35200000
+      1 Rub������,15100000
+      1 RsiamMusic : ��������,18400000
+      1 RS 1313 SHORTS,14400000
+      1 Round2hell,30700000
+      1 Rotten Tomatoes Trailers,15800000
+      1 Rotana,21800000
+      1 Rosanna Pansino,14400000
+      1 Romeo Santos,20900000
+      1 Roman Atwood Vlogs,15400000
+      1 RobTopGames,12300000
+      1 RobleisIUTU,17900000
+      1 Robin Hood Gamer,20100000
+      1 RKD Studios,19500000
+      1 RihannaVEVO,25100000
+      1 Rihanna,41900000
+      1 Right to Shiksha,12800000
+      1 Ricis Official,33300000
+      1 rezendeevil,32100000
+      1 Republic Bharat,15000000
+      1 Renato Garcia YT,26900000
+      1 #Ref����,12700000
+      1 #Refugio Mental,14100000
+      1 RedeTV,13100000
+      1 Rebecca Zamolo,14300000
+      1 Reaction Time,14500000
+      1 REACT,20000000
+      1 RCTI - LAYAR DRAMA INDONESIA,16400000
+      1 Rclbeauty101,14400000
+      1 Ray William Johnson,15000000
+      1 Rauw Alejandro,12900000
+      1 RaptorGamer,13100000
+      1 Ranz Kyle,15100000
+      1 Rans Entertainment,25400000
+      1 Rajshri,33500000
+      1 Raffy Tulfo in Action,26500000
+      1 Rafa & Luiz,21000000
+      1 Queen Official,17000000
+      1 Quantum Tech HD,12500000
+      1 Priyal Kukreja,17800000
+      1 Prime Video India,15700000
+      1 PrestonPlayz,14600000
+      1 Preston,24000000
+      1 Prajapati News,17000000
+      1 PowerKids TV,36500000
+      1 PowerfulJRE,15100000
+      1 Post Malone,25500000
+      1 Porta dos Fundos,17700000
+      1 Popular on YouTube,29300000
+      1 PopularMMOs,17200000
+      1 POPS Kids,16200000
+      1 Pop Chartbusters,16900000
+      1 Pok���������,15200000
+      1 PlayStation,15000000
+      1 Planeta das G��,14600000
+      1 Piuzinho,12700000
+      1 Pitbull,16300000
+      1 Pinkfong Baby Shark - Kids' Songs & Stories,68200000
+      1 PewDiePie,111000000
+      1 Peppa Pig - Official Channel,31400000
+      1 Peppa Pig Espa���������,23600000
+      1 Peppa Pig em Portugu��������?,13100000
+      1 People Vs Food,12500000
+      1 Pentatonix,20000000
+      1 Pen Movies,24300000
+      1 penguinz0,13300000
+      1 Pencilmation,20100000
+      1 Peet Montzingo,13400000
+      1 PDK Films,18400000
+      1 Paulo Londra,22400000
+      1 Pastor Ant����?,12900000
+      1 Pari's Lifestyle,12400000
+      1 Parafernalha,12500000
+      1 Panda Shorts,16100000
+      1 PANDA BOI,26400000
+      1 Panda,12300000
+      1 Painzeiro,13100000
+      1 Ozuna,36200000
+      1 Oyuncak Av?,15200000
+      1 O Reino Infantil,14600000
+      1 O Que N�����?,13700000
+      1 OneDirectionVEVO,21800000
+      1 One Direction,38200000
+      1 ???????????? one31,37500000
+      1 officialpsy,18100000
+      1 Official Pink Panther,19700000
+      1 Noor Stars,20200000
+      1 Noman Official,14600000
+      1 NoCopyrightSounds,33400000
+      1 NOBRU,14400000
+      1 NMF News,16600000
+      1 NishaMadhulika,13700000
+      1 Ninja Kidz TV,20500000
+      1 Ninja,23700000
+      1 NikkieTutorials,14200000
+      1 nigahiga,21000000
+      1 NickyJamTV,23600000
+      1 Nick Jr.,27300000
+      1 NickiMinajAtVEVO,12600000
+      1 Nicki Minaj,25700000
+      1 NichLmao,26000000
+      1 Niana Guerrero,15200000
+      1 News,36300000
+      1 News 24,17700000
+      1 News18 India,17500000
+      1 Netflix Jr.,14700000
+      1 Netflix India,21800000
+      1 Netflix,26700000
+      1 netd m�?,24100000
+      1 Neha Kakkar,14100000
+      1 NDTV India,15200000
+      1 NDTV,12500000
+      1 NBA,20700000
+      1 National Geographic,21800000
+      1 Natan por A?,12300000
+      1 Narins Beauty,14000000
+      1 Narendra Modi,15800000
+      1 Naisa Alifia Yuriza (N.A.Y),18300000
+      1 M����,12500000
+      1 MyMissAnand,13700000
+      1 My Mate Nate,13400000
+      1 MY FAMILY,15700000
+      1 Music,119000000
+      1 Musas,15100000
+      1 Mundo Bita,12500000
+      1 mujjuu___14,24800000
+      1 ??????????????? Ms Yeah,13100000
+      1 MSA previously My Story Animated,17800000
+      1 Mrwhosetheboss,15400000
+      1 MrSuicideSheep,12800000
+      1 MR. INDIAN HACKER,31700000
+      1 Mr DegrEE,15500000
+      1 MrBeast Gaming,36100000
+      1 MrBeast en Espa�?,24200000
+      1 MrBeast 2,27500000
+      1 MrBeast,166000000
+      1 Mr Bean,32100000
+      1 Movieclips,59500000
+      1 Morgz,12600000
+      1 MoreAliA,15000000
+      1 MoniLina,12400000
+      1 Mohamed Ramadan I ������?,15100000
+      1 Mobile Legends: Bang Bang,15400000
+      1 Mnet K-POP,20500000
+      1 MNCTV OFFICIAL,14900000
+      1 mmoshaya,22600000
+      1 MK MUSIC,15900000
+      1 Mister Max,23700000
+      1 Miss Katy,23500000
+      1 MissaSinfonia,17600000
+      1 Mis Pastelitos,14600000
+      1 Minecraft - Topic,20900000
+      1 Miley Cyrus,18300000
+      1 Mikecrack,39100000
+      1 Migos ATL,12400000
+      1 Michael Jackson,28200000
+      1 MiawAug,20200000
+      1 MGC Playhouse,17900000
+      1 Melon City Show - ����������?,12800000
+      1 melanie martinez,14900000
+      1 Meghan Trainor,14800000
+      1 MC Divertida,13200000
+      1 Mazhavil Manorama,15300000
+      1 Maya and Mary,23600000
+      1 MattyBRaps,14800000
+      1 Matt Stonie,16300000
+      1 Matt Steffanina,13300000
+      1 Matheus Yurley,12900000
+      1 Masha y el Oso,28300000
+      1 Masha e o Urso,18900000
+      1 Masha and The Bear,42400000
+      1 Mar�����,26000000
+      1 Marvel Entertainment,20100000
+      1 Martin Garrix,14600000
+      1 Marta and Rustam,20200000
+      1 Marshmello,56400000
+      1 Marques Brownlee,17200000
+      1 Maroon5VEVO,14500000
+      1 Maroon 5,36600000
+      1 Marmok,18500000
+      1 Mark Rober,24600000
+      1 Markiplier,35200000
+      1 Mariale,15100000
+      1 Maria Clara & JP,37000000
+      1 Manual do Mundo,18000000
+      1 Manoj  parihar,19300000
+      1 MalumaVEVO,14100000
+      1 Maluma,29300000
+      1 Makiman131,15100000
+      1 Make Joke Of,12300000
+      1 Major Lazer Official,14800000
+      1 MAIKI021,13700000
+      1 Maha Fun Tv,14700000
+      1 Lyrical Lemonade,21000000
+      1 Lyna,15900000
+      1 Luli Pamp�,14000000
+      1 Luisito Comunica,40600000
+      1 LuisFonsiVEVO,17000000
+      1 Luis Fonsi,31400000
+      1 LUCCAS NETO - LUCCAS TOON,39400000
+      1 Lucas and Marcus,31600000
+      1 LOUD,12400000
+      1 Lotus Music,14500000
+      1 LosPolinesios,25700000
+      1 LooLoo Kids - Nursery Rhymes and Children's Songs,54000000
+      1 LOKESH GAMER,15300000
+      1 Lokdhun Punjabi,13100000
+      1 Logan Paul,23600000
+      1 Lofi Girl,13000000
+      1 ????????? Liziqi,17600000
+      1 Liza Koshy,17100000
+      1 Live,16100000
+      1 LIV Crime,20900000
+      1 Little Mix,16300000
+      1 Little Baby Bum - Nursery Rhymes & Kids Songs,40900000
+      1 Little Baby Bum en Espa�?,12500000
+      1 Little Angel: Nursery Rhymes & Kids Songs,30100000
+      1 Little Angel - M����������,15000000
+      1 Little Angel Espa���������,18900000
+      1 Linus Tech Tips,15600000
+      1 Linkin Park,20400000
+      1 Lindsey Stirling,13600000
+      1 Lil Pump,17700000
+      1 Lil Nas X,19100000
+      1 Lilly Singh,14500000
+      1 Like Nastya VNM,17900000
+      1 Like Nastya Vlog,18500000
+      1 Like Nastya Stories,14500000
+      1 Like Nastya Show,42400000
+      1 Like Nastya PRT,22700000
+      1 Like Nastya IDN,16800000
+      1 Like Nastya ESP,37600000
+      1 Like Nastya AE,24400000
+      1 Like Nastya,106000000
+      1 Les' Copaque Production,17700000
+      1 les boys tv2,14500000
+      1 LeoNata Family,22600000
+      1 Lele Pons,17900000
+      1 LEGO,16200000
+      1 LEGENDA FUNK,14500000
+      1 League of Legends,15000000
+      1 LazarBeam,20500000
+      1 Las Ratitas,25200000
+      1 La Rosa de Guadalupe,16100000
+      1 LankyBox,25400000
+      1 Lana Del Rey,14100000
+      1 Lahari Music - TSeries,16600000
+      1 La Granja de Zen�,35700000
+      1 Lady Gaga,23200000
+      1 Lady Diana,13500000
+      1 Lachlan,14800000
+      1 Kwebbelkop,15000000
+      1 Kurzgesagt �����?,20800000
+      1 Kurt Hugo Schneider,13300000
+      1 Kuplinov ��?,15600000
+      1 KSI,24100000
+      1 Koray Zeynep,17400000
+      1 KOMPASTV,15000000
+      1 Knowledge Tv ������,13100000
+      1 KL BRO Biju Rithvik,22800000
+      1 Kinder Spielzeug Kanal (Kidibli),22200000
+      1 ????????? KIMPRO,17700000
+      1 Kim Loaiza,15100000
+      1 Kimberly Loaiza,41300000
+      1 Kids TV - Nursery Rhymes And Baby Songs,23100000
+      1 Kids TV India Hindi Nursery Rhymes,13800000
+      1 ??? Kids Roma Show,27400000
+      1 Kids Play,16200000
+      1 Kids Line�������,13300000
+      1 ??? Kids Diana Show,112000000
+      1 Kiddiestv Hindi - Nursery Rhymes & Kids Songs,20200000
+      1 Khan GS Research Centre,21200000
+      1 KHANDESHI MOVIES,33500000
+      1 Kerajinan 5-Menit,15400000
+      1 KBS WORLD TV,19000000
+      1 Kaykai Salaider,16400000
+      1 KatyPerryVEVO,24600000
+      1 Katy Perry,44200000
+      1 KatieAngel,17900000
+      1 Katakit Baby TV,15500000
+      1 Kashvi Adlakha,15500000
+      1 KAROL G,32100000
+      1 karameeshchannel,13900000
+      1 Kabita's Kitchen,13300000
+      1 JYP Entertainment,27400000
+      1 JustinBieberVEVO,31600000
+      1 Justin Bieber,71600000
+      1 Just For Laughs Gags,13300000
+      1 Junya.����,26200000
+      1 Juliana Baltar,15600000
+      1 JULIA GISELLA,13500000
+      1 JukiLop,19400000
+      1 JuegaGerman,48100000
+      1 Juan De Dios Pantoja,23600000
+      1 Jorge & Mateus Oficial,14800000
+      1 Jordan Matter,16600000
+      1 Jomy Production,13000000
+      1 JOJO TV - Hindi Stories,13600000
+      1 Jkk Entertainment,37200000
+      1 JJ Olatunji,16200000
+      1 Jingle Toons,34000000
+      1 Jimmy Kimmel Live,19100000
+      1 JFlaMusic,17600000
+      1 Jess No Limit,34000000
+      1 Jesser,14600000
+      1 JesseAndMike,13000000
+      1 Jennifer Lopez,16200000
+      1 JennaMarbles,19700000
+      1 Jelly,23500000
+      1 jeffreestar,15900000
+      1 JD Pantoja,13800000
+      1 jbalvinVEVO,13200000
+      1 J Balvin,34100000
+      1 Jazzghost,13900000
+      1 Jass Records,12700000
+      1 Jason Vlogs,17200000
+      1 Jason Derulo,17900000
+      1 Jane ASMR ��,17700000
+      1 Jamuna TV,13900000
+      1 Ja Mill,12500000
+      1 James Charles,23900000
+      1 Jake Paul,20400000
+      1 Jake Fellman,18100000
+      1 jacksepticeye,30100000
+      1 jaanvi patel,17700000
+      1 Ivana Alawi,16600000
+      1 It's Mamix,15100000
+      1 iTownGamePlay *Terror&Diversi�?,14900000
+      1 ISSEI / ����,15000000
+      1 Ishtar Music,41400000
+      1 IShowSpeed,18300000
+      1 Ishaan Ali 11,21300000
+      1 invictor,21500000
+      1 Invento na Hora,14200000
+      1 infobells - Telugu,28300000
+      1 infobells - Tamil,28900000
+      1 infobells - Kannada,14200000
+      1 Infobells - Hindi,53300000
+      1 Infobells Bangla,15500000
+      1 infobells,13700000
+      1 Infinite,21300000
+      1 Indosiar,25900000
+      1 Indore Physical Academy,14400000
+      1 IndiaTV,35500000
+      1 INCR�?,18200000
+      1 ImagineDragons,30700000
+      1 ILYA BORZOV,15300000
+      1 IGN,17500000
+      1 IDEIAS INCR��,14500000
+      1 IDEAS EN 5 MINUTOS,16600000
+      1 Ian Lucas,12700000
+      1 Ian Boggs,13100000
+      1 ???????????? ???????????? I ?????? ?? ??????????,14400000
+      1 HYBE LABELS,71300000
+      1 Hungria Hip Hop,13100000
+      1 HUM TV,28300000
+      1 HUBA��,13200000
+      1 HowToBasic,17300000
+      1 How Ridiculous,18000000
+      1 Hongyu ASMR ��,15100000
+      1 HolaSoyGerman.,43600000
+      1 HiMan,18900000
+      1 Hero Movies 2023,12400000
+      1 Heroindori,22600000
+      1 Henrique e Juliano,15500000
+      1 Heidi y Zidane,12700000
+      1 Heidi and Zidane HZHtube,12400000
+      1 Hear This Music,14500000
+      1 Health Time,12500000
+      1 Harsh Beniwal,15400000
+      1 Harry Styles,14400000
+      1 HAR PAL GEO,44600000
+      1 Happy Lives,23200000
+      1 HaerteTest,19800000
+      1 Hacksmith Industries,13800000
+      1 H2ODelirious,13400000
+      1 gymvirtual,12900000
+      1 Gyan Gaming�,14400000
+      1 Gusttavo Lima Oficial,19900000
+      1 Gustavo Par��,12400000
+      1 Gulshan Kalra,27100000
+      1 Guava Juice,16900000
+      1 Green Gold TV - Official Channel,20000000
+      1 GRAMMY GOLD OFFICIAL,18600000
+      1 GR6 EXPLODE,38900000
+      1 Got Talent Global,20300000
+      1 Gordon Ramsay,20000000
+      1 Good Mythical Morning,18300000
+      1 Goldmines Premiere,13700000
+      1 Goldmines Movies,24000000
+      1 Goldmines Great Indian Comedy,19100000
+      1 Goldmines Gaane Sune Ansune,38300000
+      1 Goldmines Dishoom,28000000
+      1 Goldmines Cineplex,22500000
+      1 Goldmines Bollywood,26400000
+      1 Goldmines,86900000
+      1 Go Ami Go!,12700000
+      1 GMMTV OFFICIAL��,16400000
+      1 GMM GRAMMY OFFICIAL,23100000
+      1 GMM25Thailand,14500000
+      1 GMA Public  Affairs,21200000
+      1 GMA  Network,31900000
+      1 GMA Integrated News,13400000
+      1 Gibby :),12400000
+      1 GH'S,13000000
+      1 Get Movies,47500000
+      1 Geo News,13800000
+      1 Genierock,15400000
+      1 GENIAL,31800000
+      1 GEN HALILINTAR,18100000
+      1 Genevieve's Playhouse - Learning Videos for Kids,34900000
+      1 ??????????????? - Genevieve's Playhouse,20300000
+      1 Geet MP3,34300000
+      1 Gato Galactico | GAL�?,16800000
+      1 Gaming,93600000
+      1 Gallina Pintadita,14000000
+      1 Galinha Pintadinha,33800000
+      1 Gaby and Alex,17000000
+      1 Future,12700000
+      1 FunFun Toy Doll TV,16500000
+      1 Fun For Kids TV - Hindi Rhymes,17500000
+      1 Fueled By Ramen,14800000
+      1 Frost Diamond,30100000
+      1 Free Fire India Official,12300000
+      1 Franco Escamilla,12700000
+      1 Flowers Comedy,12500000
+      1 FitDance,16100000
+      1 First We Feast,12500000
+      1 Filaretiki,14800000
+      1 Fifth Harmony,14600000
+      1 FIFA,19400000
+      1 FGTeeV,22300000
+      1 FFUNTV,15400000
+      1 Fernanfloo,46100000
+      1 Felipe Neto,45200000
+      1 Fede Vigevani,25600000
+      1 FC Barcelona,15300000
+      1 FaZe Rug,23700000
+      1 Fatos Desconhecidos,20900000
+      1 Farruko,18800000
+      1 FAPTV,13700000
+      1 Family GamesTV,20200000
+      1 Family Fitness,12500000
+      1 FailArmy,16500000
+      1 FactTechz,17500000
+      1 FACT FIRE KING,12700000
+      1 F2Freestylers - Ultimate Soccer Skills Channel,14100000
+      1 ExtraPolinesios,16200000
+      1 Everson Zoio,13000000
+      1 Eva Bravo Play,21600000
+      1 etvteluguindia,19400000
+      1 ETV Jabardasth,14000000
+      1 Eros Now Music,32700000
+      1 ERB,14900000
+      1 EnriqueIglesiasVEVO,12900000
+      1 Enrique Iglesias,23800000
+      1 Enes Batur,16000000
+      1 enchufetv,26700000
+      1 Enaldinho,29200000
+      1 Emiway Bantai,20400000
+      1 EminemVEVO,24700000
+      1 EminemMusic,56900000
+      1 E-MasterSensei,14200000
+      1 elrubiusOMG,40400000
+      1 El Reino Infantil,58400000
+      1 El Reino a Jugar,17200000
+      1 El Payaso Plim Plim,17700000
+      1 Ellie Goulding,12600000
+      1 Eli Kids - Cartoons & Songs,14500000
+      1 elcarteldesantatv,12500000
+      1 Ei Nerd,13200000
+      1 EeOneGuy,16900000
+      1 Ed Sheeran,53500000
+      1 EdisonPts,15100000
+      1 Dyland PROS,16100000
+      1 Dushyant kukreja,27100000
+      1 Duo Tiempo De Sol,12800000
+      1 DUDU e CAROL,21600000
+      1 Dude Perfect,59500000
+      1 Dua Lipa,21800000
+      1 Dr. Vivek Bindra: Motivational Speaker,20900000
+      1 DrossRotzank,23000000
+      1 Dream,31700000
+      1 Drawblogs,14400000
+      1 Drake,28100000
+      1 DopeLyrics,15900000
+      1 DONA ��,31700000
+      1 Doggy Doggy Cartoons,16800000
+      1 Doc Tops,14600000
+      1 DM - Desi Melodies,15700000
+      1 DLS News,19400000
+      1 DJ Snake,24100000
+      1 DJ Khaled,13100000
+      1 DisneyMusicVEVO,32700000
+      1 Disney Latinoam��,21900000
+      1 Disney Junior,16100000
+      1 DisneyChannelUK,12400000
+      1 Diana and Roma IND,12700000
+      1 Diana and Roma ESP,30700000
+      1 Diana and Roma EN,23900000
+      1 Diana and Roma ARA,24100000
+      1 Dhar Mann,18400000
+      1 DEV Ke Facts,12400000
+      1 DeToxoMoroxo,16800000
+      1 Desi Music Factory,33700000
+      1 Desi Gamers,13700000
+      1 Dental Digest,13900000
+      1 Demi Lovato,17900000
+      1 DeGoBooM,17600000
+      1 deepesh zo,16800000
+      1 dednahype,20200000
+      1 Deddy Corbuzier,20600000
+      1 Dear Sir,15800000
+      1 D Billions,26200000
+      1 Davie504,13000000
+      1 David Guetta,25700000
+      1 David Dobrik,17900000
+      1 Dave and Ava - Nursery Rhymes and Baby Songs,15300000
+      1 Darkar Company Studios,13900000
+      1 DanTDM,27400000
+      1 Dan-Sa / Daniel Saboya,18500000
+      1 Dan Rhodes,24800000
+      1 Danny Fitt,16900000
+      1 DaniRep | +6 V����������?,12400000
+      1 Daniel LaBelle,24100000
+      1 DangMattSmith,14200000
+      1 Dangal TV Channel,21300000
+      1 DALLMYD,13600000
+      1 Daily Dose Of Internet,16100000
+      1 DaFuq!?Boom!,19600000
+      1 Daftar Populer,15100000
+      1 Daddy Yankee,38000000
+      1 Cyprien,14400000
+      1 CVS 3D Rhymes & Kids Songs,33400000
+      1 Crescendo com Luluca,14000000
+      1 Crazy XYZ,27300000
+      1 Crazy Frog,14200000
+      1 CrashCourse,14800000
+      1 Crafty Panda,19800000
+      1 CoryxKenshin,16700000
+      1 CookingShooking Hindi,13200000
+      1 CookieSwirlC,20100000
+      1 Conor Maynard,13500000
+      1 Colors TV,64600000
+      1 Colors Rishtey,14700000
+      1 Collins Key,23900000
+      1 CollegeHumor,14700000
+      1 colinfurze,12500000
+      1 Coldplay,25300000
+      1 Coke Studio,14400000
+      1 Codiscos,13400000
+      1 Cocomelon - Nursery Rhymes,162000000
+      1 CNN,15200000
+      1 Clash of Clans,19600000
+      1 CKN,18700000
+      1 CKM,12500000
+      1 ChuChu TV Nursery Rhymes & Kids Songs,65900000
+      1 Chris Brown,25200000
+      1 Chloe Ting,24700000
+      1 Chetan Monga Vlogs,15000000
+      1 Charlie Puth,22000000
+      1 Chapitosiki,15100000
+      1 Chad Wild Clay,14700000
+      1 Ch7HD,16400000
+      1 Ch3Thailand,33500000
+      1 Caylus,12400000
+      1 CaseyNeistat,12600000
+      1 CarryMinati,39200000
+      1 Cardi B,18800000
+      1 Canal Nostalgia,14700000
+      1 Canal KondZilla,66500000
+      1 Canal IN,16100000
+      1 Canal Canalha,20800000
+      1 Camilo,15900000
+      1 Camila Loures,14700000
+      1 Camila Cabello,16300000
+      1 Calvin Harris,19000000
+      1 Calon Sarjana,13000000
+      1 Caeli YT,15600000
+      1 BuzzFeedVideo,20100000
+      1 Busy Fun Ltd,18800000
+      1 BUDI01 GAMING,13500000
+      1 Bruno Mars,36700000
+      1 Britain's Got Talent,19700000
+      1 BRIGHT SIDE,44500000
+      1 Brent Rivera,27000000
+      1 Brawl Stars,13200000
+      1 Brave Wilderness,20900000
+      1 Boyce Avenue,16300000
+      1 Bounce Patrol - Kids Songs,27800000
+      1 Boram Tube Vlog [��������?,30300000
+      1 Boram Tube ToysReview [��������?,14500000
+      1 Bollywood Classics,16300000
+      1 Bobby chourasiya,18200000
+      1 Blossom,12700000
+      1 Blockbuster Movies,13400000
+      1 Blippi Espa�?,15500000
+      1 Blippi - Educational Videos for Kids,18100000
+      1 BLACKPINK,89800000
+      1 Bizarrap,20600000
+      1 Bispo Bruno Leonardo,16900000
+      1 BillionSurpriseToys  - Nursery Rhymes & Cartoons,52200000
+      1 Billie Eilish,47900000
+      1 BigSchool,15000000
+      1 BIGBANG,15100000
+      1 Bie The Ska,14100000
+      1 BIBO �����?,13200000
+      1 BIBO����?,12900000
+      1 bharatzkitchen HINDI,12400000
+      1 Beyonc��,12800000
+      1 Beyonc?,26000000
+      1 BETER B��,32700000
+      1 Ben Azelart,21900000
+      1 Becky G,21300000
+      1 Bebefinn - Nursery Rhymes & Kids Songs,12500000
+      1 BeatboxJCOP,18000000
+      1 Beast Reacts,26700000
+      1 Beast Philanthropy,14800000
+      1 BB Ki Vines,26300000
+      1 BBC News Hindi,16500000
+      1 BBC News,14500000
+      1 BBC,13600000
+      1 Bayashi TV,14900000
+      1 BANGTANTV,75600000
+      1 BanderitaX,13300000
+      1 Baim Paula,21100000
+      1 Bad Bunny,46100000
+      1 Badabun,46800000
+      1 BabyBus - Kids Songs and Cartoons,32800000
+      1 BabyBus - Cerita & Lagu Anak-anak,20300000
+      1 BabyBus - Canciones Infantiles & Videos para Ni�?,22900000
+      1 AzzyLand,13300000
+      1 Azhan5star,21300000
+      1 Awakening Music,13500000
+      1 Avril Lavigne,12400000
+      1 Avicii,20600000
+      1 AuthenticGames,20100000
+      1 AuronPlay,29200000
+      1 Auron,14600000
+      1 ????????/Atro,13800000
+      1 Atlantic Records,13900000
+      1 ATHLEAN-X�,13400000
+      1 ashish chanchlani vines,29800000
+      1 AS Gaming,19600000
+      1 ARY Digital HD,43200000
+      1 Arif muhammad,15800000
+      1 ArianaGrandeVevo,17700000
+      1 Ariana Grande,52700000
+      1 ???????? ?????????? ?????????? | Arab Games Network,18600000
+      1 Apple,17300000
+      1 Aphmau,17400000
+      1 Anuel AA,25000000
+      1 Antrax,16000000
+      1 ANNA KOVA,12400000
+      1 Anitta,17200000
+      1 And TV,18000000
+      1 Anaysa,13500000
+      1 Amit Bhadana,24300000
+      1 Ami Rodriguez,20200000
+      1 America's Got Talent,24800000
+      1 AMARINTV : ������������,17400000
+      1 AM3NlC,14000000
+      1 ???????????????? - Al-Remas,17400000
+      1 Ali-A,18700000
+      1 Alfredo Larin,16400000
+      1 Alex Gonzaga Official,13100000
+      1 Alexa Rivera,13900000
+      1 Alejo Igoa,24100000
+      1 AlArabiya ����?,12900000
+      1 Alan Walker,43700000
+      1 Alan Chikin Chow,26400000
+      1 Alan Becker,22900000
+      1 Akshay Nagwadiya,23200000
+      1 Akon,12900000
+      1 Ajay Sharma,18100000
+      1 Airrack,13800000
+      1 AH,30400000
+      1 AdMe,16200000
+      1 Aditya Music India,28500000
+      1 Aditya Movies,28400000
+      1 Adexe & Nau,12700000
+      1 AdeleVEVO,15100000
+      1 ADEL et SAMI,13900000
+      1 Adele,30200000
+      1 Adam W,12800000
+      1 Acenix,13600000
+      1 ABS-CBN News,15100000
+      1 ABS-CBN Entertainment,44200000
+      1 ABP NEWS,37000000
+      1 ABPLIVE,25200000
+      1 AboFlah,30500000
+      1 ABC News,14700000
+      1 Aayu and Pihu Show,16900000
+      1 Aaj Tak,57600000
+      1 Aadishakti Films,14500000
+      1 A4,46300000
+      1 A2 Motivation by Arvind Arora,15000000
+      1 ????????????8 : Thai Ch8,14900000
+      1 7 Minutoz,13000000
+      1 7clouds,20100000
+      1 5-Minute Crafts Recycle,14800000
+      1 5-Minute Crafts PLAY,20100000
+      1 5-Minute Crafts FAMILY,15600000
+      1 5-Minute Crafts DIY,20700000
+      1 5-Minute Crafts,80100000
+      1 ???????? ?????????????? ???? 5 ??????????,15500000
+      1 50 Cent,14900000
+      1 ???????? ?? ??????????????,43200000
+      1 ??????????????? ?????? ??????????????????,30400000
+      1 1theK (����?,24500000
+      1 1MILLION Dance Studio,26100000
+      1 ?????????????? ????,19000000
+      1 ??????????????????????,18800000
+      1 ???????? ??????????????????????,16500000
+      1 ??????????,15900000
+      1 ???????? ?? ????????,15500000
+      1 ??????,14900000
+      1 ???????? ????????,14800000
+      1 ?????????? ????????????,14700000
+      1 ?????????????????????,14400000
+      1 ???????????????????? ????????????????????,14100000
+      1 ????????????,14000000
+      1 ???????? ?? ????????????,13900000
+      1 ??????????????????,13300000
+      1 ???????? ???? ??????????????,12900000
+      1 123 GO! Spanish,13800000
+[kobef23@sjsu Assignment2]$ nano Assignment2.txt
+[kobef23@sjsu Assignment2]$ ps -u kobef23@sjsu
+error: user name does not exist
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[kobef23@sjsu Assignment2]$ ps -u kfvoltaire
+error: user name does not exist
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[kobef23@sjsu Assignment2]$ vi file.txt
+[kobef23@sjsu Assignment2]$ nano Assignment2.txt
+[kobef23@sjsu Assignment2]$ ps aux | grep '[/]sbin/init'
+[kobef23@sjsu Assignment2]$ ps aux | grep '[/]sbin/init'
+[kobef23@sjsu Assignment2]$ ps aux | grep '/usr/lib/systemd/systemd'
+root           1  0.3  0.0 178624 18368 ?        Ss   Oct05  44:25 /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+root        2978  0.0  0.4 372992 302016 ?       Ss   Oct05   6:21 /usr/lib/systemd/systemd-journald
+root        3027  0.0  0.0  55936 14400 ?        Ss   Oct05   0:01 /usr/lib/systemd/systemd-udevd
+root        3679  0.0  0.0  35392 13760 ?        Ss   Oct05   4:13 /usr/lib/systemd/systemd-logind
+malexin    13840  0.0  0.0  28736 15168 ?        Ss   Oct05   5:20 /usr/lib/systemd/systemd --user
+trinhvi+   23207  0.0  0.0  28736 15232 ?        Ss   Oct05   4:12 /usr/lib/systemd/systemd --user
+ramirez+   28563  0.0  0.0  28736 15168 ?        Ss   Oct05   5:26 /usr/lib/systemd/systemd --user
+billand+   29653  0.0  0.0  28736 15168 ?        Ss   Oct05   4:13 /usr/lib/systemd/systemd --user
+zazakha+   34438  0.0  0.0  28736 15168 ?        Ss   Oct05   4:12 /usr/lib/systemd/systemd --user
+chenkyle   42536  0.0  0.0  28736 15168 ?        Ss   Oct05   4:15 /usr/lib/systemd/systemd --user
+jianjam+   45515  0.0  0.0  28736 15168 ?        Ss   Oct05   5:39 /usr/lib/systemd/systemd --user
+niansean   58391  0.0  0.0  28736 15168 ?        Ss   Oct05   4:19 /usr/lib/systemd/systemd --user
+qianbri+  401663  0.0  0.0  28736 15168 ?        Ss   Oct05   5:36 /usr/lib/systemd/systemd --user
+tawdega+  597176  0.0  0.0  28736 15168 ?        Ss   Oct05   4:18 /usr/lib/systemd/systemd --user
+taigario  624836  0.0  0.0  28736 15168 ?        Ss   Oct05   4:17 /usr/lib/systemd/systemd --user
+reyesaz+  629993  0.0  0.0  28736 15168 ?        Ss   Oct05   4:18 /usr/lib/systemd/systemd --user
+bhogalg+  635463  0.0  0.0  28736 15168 ?        Ss   Oct06   4:18 /usr/lib/systemd/systemd --user
+huangan+  635881  0.0  0.0  28736 15168 ?        Ss   Oct06   4:23 /usr/lib/systemd/systemd --user
+sharmaa+  645070  0.0  0.0  28736 15168 ?        Ss   Oct06   4:21 /usr/lib/systemd/systemd --user
+nguyent+  661051  0.0  0.0  28736 15168 ?        Ss   Oct06   4:39 /usr/lib/systemd/systemd --user
+tangnic+  778500  0.0  0.0  28736 15232 ?        Ss   Oct11   1:36 /usr/lib/systemd/systemd --user
+ahmedam+  881307  0.0  0.0  28736 15168 ?        Ss   Oct09   2:26 /usr/lib/systemd/systemd --user
+ashishf+  939916  0.0  0.0  28736 15168 ?        Ss   Oct09   2:20 /usr/lib/systemd/systemd --user
+samuelf+  946177  0.0  0.0  28736 15168 ?        Ss   Oct09   2:48 /usr/lib/systemd/systemd --user
+jewonf23  946380  0.0  0.0  28736 15168 ?        Ss   Oct09   2:49 /usr/lib/systemd/systemd --user
+kidanee+ 1162453  0.0  0.0  28736 15168 ?        Ss   Oct10   2:26 /usr/lib/systemd/systemd --user
+eschjer+ 3161122  0.0  0.0  28736 15168 ?        Ss   13:07   0:16 /usr/lib/systemd/systemd --user
+digheam+ 3179299  0.0  0.0  28800 15232 ?        Ss   13:34   0:16 /usr/lib/systemd/systemd --user
+ledavid  3580729  0.0  0.0  28736 15232 ?        Ss   Oct10   2:07 /usr/lib/systemd/systemd --user
+rikkif23 3734177  0.0  0.0  28736 15168 ?        Ss   19:52   0:06 /usr/lib/systemd/systemd --user
+thif23   3805734  0.0  0.0  28672 14912 ?        Ss   21:33   0:03 /usr/lib/systemd/systemd --user
+stevenf+ 3813219  0.0  0.0  28736 15168 ?        Ss   21:44   0:03 /usr/lib/systemd/systemd --user
+rahulf23 3820551  0.0  0.0  28672 14912 ?        Ss   21:54   0:02 /usr/lib/systemd/systemd --user
+brendan+ 3823342  0.0  0.0  28672 14848 ?        Ss   21:58   0:02 /usr/lib/systemd/systemd --user
+kobef23  3838064  0.0  0.0  28672 14848 ?        Ss   22:19   0:01 /usr/lib/systemd/systemd --user
+junf23   3853042  0.0  0.0  28672 14848 ?        Ss   22:40   0:01 /usr/lib/systemd/systemd --user
+aaronf23 3853921  0.0  0.0  28672 14848 ?        Ss   22:42   0:01 /usr/lib/systemd/systemd --user
+kobef23  3876713  0.0  0.0   8512  1792 pts/93   S+   23:14   0:00 grep --color=auto /usr/lib/systemd/systemd
+phanste+ 4055511  0.0  0.0  28736 15232 ?        Ss   Oct11   2:02 /usr/lib/systemd/systemd --user
+yacoubr+ 4137443  0.0  0.0  28736 15168 ?        Ss   Oct11   1:43 /usr/lib/systemd/systemd --user
+[kobef23@sjsu Assignment2]$ nano Assignment2.txt
+[kobef23@sjsu Assignment2]$ 
