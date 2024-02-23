@@ -1,0 +1,22 @@
+[kobesp24@sjsu ~]$ cd Worksheet2
+[kobesp24@sjsu Worksheet2]$ wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+--2024-02-23 01:20:39--  https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200279 (196K) [text/plain]
+Saving to: ‘Global YouTube Statistics.csv’
+
+Global YouTube Statistics.csv 100%[===============================================>] 195.58K  --.-KB/s    in 0.009s  
+
+2024-02-23 01:20:39 (21.8 MB/s) - ‘Global YouTube Statistics.csv’ saved [200279/200279]
+
+[kobesp24@sjsu Worksheet2]$ grep "United States" 'Global YouTube Statistics.csv' > us_youtubers.txt
+[kobesp24@sjsu Worksheet2]$ grep "Music" 'Global YouTube Statistics.csv' > music_records.txt
+[kobesp24@sjsu Worksheet2]$ wc -l music_records.txt > counts.txt
+[kobesp24@sjsu Worksheet2]$ wc -w music_records.txt >> counts.txt
+[kobesp24@sjsu Worksheet2]$ nano counts.txt
+[kobesp24@sjsu Worksheet2]$ nano counts.txt
+[kobesp24@sjsu Worksheet2]$ nano counts.txt
+[kobesp24@sjsu Worksheet2]$ history > cmds.log
+[kobesp24@sjsu Worksheet2]$ git commit -m "Worksheet2 Containing counts.txt & cmds.log"
