@@ -1,4 +1,4 @@
-Last login: Wed Mar 20 11:07:10 on ttys001
+Last login: Tue Mar 19 11:07:10 on ttys001
 kfv@Kobes-MacBook-Pro ~ % ssh kobesp24@172.20.25.9
 kobesp24@172.20.25.9's password: 
 Activate the web console with: systemctl enable --now cockpit.socket
