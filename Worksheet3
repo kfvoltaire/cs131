@@ -1,0 +1,28 @@
+[kobesp24@sjsu ~]$ cd Worksheet3
+[kobesp24@sjsu Worksheet3]$ # Task 1: Sort the "highest_monthly_earnings" to find the highest monthly earner from 3 different countries: United States, United Kingdom, and India
+[kobesp24@sjsu Worksheet3]$ # United States
+[kobesp24@sjsu Worksheet3]$ cut -d ',' -f 1,9 "Global YouTube Statistics.csv" | grep "United States" | sort -t ',' -k2 -n -r | head -n 1 > ws3.txt
+[kobesp24@sjsu Worksheet3]$ # United Kingdom
+[kobesp24@sjsu Worksheet3]$ cut -d ',' -f 1,9 "Global YouTube Statistics.csv" | grep "United Kingdom" | sort -t ',' -k2 -n -r | head -n 1 >> ws3.txt
+[kobesp24@sjsu Worksheet3]$ # India
+[kobesp24@sjsu Worksheet3]$ cut -d ',' -f 1,9 "Global YouTube Statistics.csv" | grep "India" | sort -t ',' -k2 -n -r | head -n 1 >> ws3.txt
+[kobesp24@sjsu Worksheet3]$ # Task 2: Sort the "#Subscribers" to find the highest subscribed channel from 3 different categories: Sports, Education, and Entertainment
+[kobesp24@sjsu Worksheet3]$ # Sports
+[kobesp24@sjsu Worksheet3]$ cut -d ',' -f 2,8 "Global YouTube Statistics.csv" | grep "Sports" | sort -t ',' -k2 -n -r | head -n 1 >> ws3.txt
+[kobesp24@sjsu Worksheet3]$ # Education
+[kobesp24@sjsu Worksheet3]$ cut -d ',' -f 2,8 "Global YouTube Statistics.csv" | grep "Education" | sort -t ',' -k2 -n -r | head -n 1 >> ws3.txt
+[kobesp24@sjsu Worksheet3]$ # Entertainment
+[kobesp24@sjsu Worksheet3]$ cut -d ',' -f 2,8 "Global YouTube Statistics.csv" | grep "Entertainment" | sort -t ',' -k2 -n -r | head -n 1 >> ws3.txt
+[kobesp24@sjsu Worksheet3]$ # Annotate ws3.txt using vi
+[kobesp24@sjsu Worksheet3]$ [kobesp24@sjsu Worksheet3]$ nano ws3.txt
+[kobesp24@sjsu Worksheet3]$ cat ws3.txt
+Task 1 
+9200000 Unites States 
+2000000 United Kingdom
+9000000 India
+
+Task 2 
+96000000 WWE Sports
+162000000 Cocomelon_-_Nursery_Rhymes Education
+166000000 MrBeast Entertainment
+[kobesp24@sjsu Worksheet3]$ 
