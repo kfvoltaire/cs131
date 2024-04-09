@@ -1,0 +1,63 @@
+last login: Mon Apr  8 21:07:44 on ttys000
+kfv@Kobes-MacBook-Pro ~ % ssh kobesp24@172.20.25.9
+kobesp24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Tue Apr  9 00:07:52 2024 from 172.29.96.108
+[kobesp24@sjsu ~]$ cd Worksheet4
+[kobesp24@sjsu Worksheet4]$ nano ~/.bash_profile
+[kobesp24@sjsu Worksheet4]$ l
+total 204
+-rw-rw-r-- 1 kobesp24 kobesp24 200279 Apr  9 00:04 'Global YouTube Statistics.csv'
+drwxrwxr-x 3 kobesp24 kobesp24   4096 Apr  9 00:07  Worksheet4
+drwxrwxr-x 2 kobesp24 kobesp24   4096 Apr  9 00:10  Subscribers
+[kobesp24@sjsu Worksheet4]$ w
+      4      31     216
+[kobesp24@sjsu Worksheet4]$ #Task 2
+[kobesp24@sjsu Worksheet4]$ cd Subscribers
+[kobesp24@sjsu Subscribers]$ wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+--2024-04-09 00:14:39--  https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200279 (196K) [text/plain]
+Saving to: ‘Global YouTube Statistics.csv’
+
+Global YouTube Stat 100%[===================>] 195.58K  --.-KB/s    in 0.01s   
+
+2024-04-09 00:14:40 (20.1 MB/s) - ‘Global YouTube Statistics.csv’ saved [200279/200279]
+
+[kobesp24@sjsu Subscribers]$ grep "United States" 'Global YouTube Statistics.csv' | cut -d ',' -f 3 > Worksheet4/Subscribers/United_States.txt
+-bash: Worksheet4/Subscribers/United_States.txt: No such file or directory
+[kobesp24@sjsu Subscribers]$ grep "United States" '../Global YouTube Statistics.csv' | cut -d ',' -f 3 > Subscribers/United_States.txt
+-bash: Subscribers/United_States.txt: No such file or directory
+[kobesp24@sjsu Subscribers]$ grep "United States" '../../Global YouTube Statistics.csv' | cut -d ',' -f 3 > United_States.txt
+[kobesp24@sjsu Subscribers]$ grep "India" '../../Global YouTube Statistics.csv' | cut -d ',' -f 3 > India.txt
+[kobesp24@sjsu Subscribers]$ 
+[kobesp24@sjsu Subscribers]$ mean_us=$(awk '{ total += $1; count++ } END { print total/count }' United_States.txt)
+[kobesp24@sjsu Subscribers]$ mean_india=$(awk '{ total += $1; count++ } END { print total/count }' India.txt)
+[kobesp24@sjsu Subscribers]$ echo "Mean subscribers for United States: $mean_us" > ../ws4_means.txt
+[kobesp24@sjsu Subscribers]$ echo "Mean subscribers for India: $mean_india" >> ../ws4_means.txt
+[kobesp24@sjsu Subscribers]$ nano ws4_means.txt
+[kobesp24@sjsu Subscribers]$ cat ws4_means.txt
+25658333
+23416932
+
+[kobesp24@sjsu Subscribers]$ #task 3
+[kobesp24@sjsu Subscribers]$ cd
+[kobesp24@sjsu ~]$ cd Worksheet4
+[kobesp24@sjsu Worksheet4]$ echo -e "Hello, John Doe!\nHi, Jane Doe!\nGreetings, John Smith!\nHello, Michael Johnson!\nHi, Emily Davis!" > greetings.txt
+-bash: !\nHi,: event not found
+[kobesp24@sjsu Worksheet4]$ echo -e 'Hello, John Doe!\nHi, Jane Doe!\nGreetings, John Smith!\nHello, Michael Johnson!\nHi, Emily Davis!' > greetings.txt
+[kobesp24@sjsu Worksheet4]$ sed -i 's/Hello/Hi/g' greetings.txt
+[kobesp24@sjsu Worksheet4]$ sed -i '/Doe/d' greetings.txt
+[kobesp24@sjsu Worksheet4]$ 
+[kobesp24@sjsu Worksheet4]$ sed -i 's/$/ (edited)/' greetings.txt
+[kobesp24@sjsu Worksheet4]$ sed -i '/^Hello,.*Michael Johnson/s/Michael Johnson/Mike Johnson/' greetings.txt
+[kobesp24@sjsu Worksheet4]$ cat greetings.txt
+Greetings, John Smith! (edited)
+Hi, Michael Johnson! (edited)
+Hi, Emily Davis! (edited)
+[kobesp24@sjsu Worksheet4]$ 
