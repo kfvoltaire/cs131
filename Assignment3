@@ -1,0 +1,247 @@
+Last login: Fri Apr 19 21:11:16 on ttys000
+kfv@Kobes-MacBook-Pro ~ % ssh kobesp24@172.20.25.9
+kobesp24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Tue Apr  9 00:12:33 2024 from 172.29.96.108
+[kobesp24@sjsu ~]$ mkdir Assignment3
+[kobesp24@sjsu ~]$ 
+[kobesp24@sjsu ~]$ cd Assignment3
+[kobesp24@sjsu Assignment3]$ wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+--2024-04-20 00:13:52--  https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 37629 (37K) [text/plain]
+Saving to: ‘last.fake’
+
+last.fake                       100%[=====================================================>]  36.75K  --.-KB/s    in 0s      
+
+2024-04-20 00:13:52 (87.9 MB/s) - ‘last.fake’ saved [37629/37629]
+
+[kobesp24@sjsu Assignment3]$ wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+--2024-04-20 00:14:02--  https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15987 (16K) [text/plain]
+Saving to: ‘passwd.fake’
+
+passwd.fake                     100%[=====================================================>]  15.61K  --.-KB/s    in 0.001s  
+
+2024-04-20 00:14:03 (19.6 MB/s) - ‘passwd.fake’ saved [15987/15987]
+
+[kobesp24@sjsu Assignment3]$ # Task 1 
+[kobesp24@sjsu Assignment3]$ wc -l last.fake
+507 last.fake
+[kobesp24@sjsu Assignment3]$ # Task #2
+[kobesp24@sjsu Assignment3]$ grep 'sp24' last.fake > lastsp24.fake
+[kobesp24@sjsu Assignment3]$ wc -l lastsp24.fake
+478 lastsp24.fake
+[kobesp24@sjsu Assignment3]$ grep 'Sun ' lastsp24.fake | awk '{print $1}' | sort | uniq
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+[kobesp24@sjsu Assignment3]$ # Task #3
+[kobesp24@sjsu Assignment3]$ awk '$NF ~ /([0-3]?[0-9])?:(2[3-9]|3|4:00)/ {print $1}' lastsp24.fake | sort | uniq
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+ayesp24
+benjaminsp24
+bennysp24
+brandonsp24
+breannasp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+dylansp24
+ericsp24
+fnusp24
+gavinsp24
+georgesp24
+gursimransp24
+hardiksp24
+jadonsp24
+jaydevsp24
+jessesp24
+jimmysp24
+jonathansp24
+justinsp24
+khushisp24
+kobesp24
+madhavsp24
+matthewsp24
+megansp24
+michellesp24
+nicholsonsp24
+nicolesp24
+piercesp24
+pratiksp24
+rickysp24
+ronsp24
+sandrasp24
+sheelsp24
+sunidhisp24
+swansp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+zakisp24
+[kobesp24@sjsu Assignment3]$ # Task #4
+[kobesp24@sjsu Assignment3]$ awk '$NF ~ /(0[5-9]|1:00)?:[0-5]?[0-9]/ {print $1}' lastsp24.fake | sort | uniq
+aarushisp24
+aayushsp24
+acesp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+atishaysp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+brandonsp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+hardiksp24
+jadonsp24
+jaydevsp24
+jessesp24
+jimmysp24
+jonathansp24
+justinsp24
+kevinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+michellesp24
+nhatsp24
+nicholsonsp24
+nicolesp24
+piercesp24
+pratiksp24
+rickysp24
+robertosp24
+robertsp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+[kobesp24@sjsu Assignment3]$ #Task 5
+[kobesp24@sjsu Assignment3]$ awk '/^t/ {print $1}' lastsp24.fake
+tylersp24
+tylersp24
+tylersp24
+tylersp24
+tylersp24
+tylersp24
+tylersp24
+tylermsp24
+tylermsp24
+tylermsp24
+tylermsp24
+tylermsp24
+tylermsp24
+tylermsp24
+tylermsp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+taliasp24
+tylersp24
+tylermsp24
+tylermsp24
+tylermsp24
+tylersp24
+tanishasp24
+tylersp24
+tylersp24
+tylersp24
+tylermsp24
+tylersp24
+tylersp24
+[kobesp24@sjsu Assignment3]$ # Task 6
+[kobesp24@sjsu Assignment3]$ awk -F: '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+[kobesp24@sjsu Assignment3]$ #Task 7
+[kobesp24@sjsu Assignment3]$ sed 's/[[:alnum:][:space:]]//g' passwd.fake | sort -u
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
+[kobesp24@sjsu Assignment3]$
