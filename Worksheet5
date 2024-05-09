@@ -1,0 +1,34 @@
+kfv@Kobes-MacBook-Pro ~ % ssh kobesp24@172.20.25.9
+kobesp24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Wed May  1 00:48:01 2024 from 172.29.96.251
+[kobesp24@sjsu ~]$ mkdir Worksheet5
+[kobesp24@sjsu ~]$ cd Worksheet5
+[kobesp24@sjsu Worksheet5]$ wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+--2024-05-09 00:24:02--  https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200279 (196K) [text/plain]
+Saving to: ‘Global YouTube Statistics.csv’
+
+Global YouTube Stat 100%[===================>] 195.58K  --.-KB/s    in 0.009s  
+
+2024-05-09 00:24:02 (22.4 MB/s) - ‘Global YouTube Statistics.csv’ saved [200279/200279]
+
+[kobesp24@sjsu Worksheet5]$ #!/bin/bash
+[kobesp24@sjsu Worksheet5]$ # Count the number of entries in each category file and write the counts into ws5.txt
+[kobesp24@sjsu Worksheet5]$ wc -l "Worksheet5/United States/Music.txt" >> ws5.txt
+[kobesp24@sjsu Worksheet5]$ wc -l "Worksheet5/United States/Entertainment.txt" >> ws5.txt
+[kobesp24@sjsu Worksheet5]$ wc -l "Worksheet5/United States/Gaming.txt" >> ws5.txt
+[kobesp24@sjsu Worksheet5]$ wc -l "Worksheet5/United States/Comedy.txt" >> ws5.txt
+[kobesp24@sjsu Worksheet5]$ cat ws5.txt
+73 /United States/Music.txt
+68 /United States/Entertainment.txt
+26 /United States/Gaming.txt
+22 /United States/Comedy.txt
+[kobesp24@sjsu Worksheet5]$ cd
+[kobesp24@sjsu ~]$ 
